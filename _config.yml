@@ -1,24 +1,22 @@
-title: Title of your CV site
-profile_img: /assets/img/profile.webp
-icon_img: /assets/img/icon.webp
+title: scrotiegg – failure is the utility
+profile_img: /assets/img/scrotiegg.png     # coloque aqui a imagem do ovo cabeludo!
+icon_img: /assets/img/scrotiegg-icon.png   # coloque aqui o ícone engraçado
 
-name: "Your Name Here"
-job: "〈Your Job Here〉"
+name: "scrotiegg (the original hairy egg)"
+job: "first memecoin to embrace failure"
 
-phone_number: 012-345-6789
-address: City, Country
-email: email@example.com
-linkedin_username: linkedin
-github_username: github
-instagram_username: instagram
-twitter_username: twitter
-facebook_username: facebook
-youtube_username: youtube
-blog_url: homepage-url
+phone_number: dial at your own risk
+address: lost somewhere on the blockchain
+email: mailbox@scrotiegg.fun  # use seu e-mail ou uma fake divertida!
+linkedin_username: nobody-hired-us
+github_username: scrotiegg
+instagram_username: scrotiegg
+twitter_username: scrotiegg
+facebook_username: scrotiegg
+youtube_username: scrotiegg
+blog_url: https://scrotiegg.fun # ou um link para um 404 meme se preferir
 
-# If your repo name follows the format "<user-name>.github.io", then leave the below blank.
-# Otherwise, set its value as "/<repo-name>". ex) baseurl: /resume
-baseurl:
+baseurl: # (normalmente deixe em branco)
 
 exclude:
   - _posts/
