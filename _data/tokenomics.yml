@@ -1,0 +1,11 @@
+subject: tokenomics
+icon: /assets/img/chart.svg
+listing-order: 2
+contents:
+  - title: "numbers that don’t add up"
+    text: |
+      - supply: 1,000,000,000
+      - utility: who needs it?
+      - liquidity: like your willpower – minimal.
+      - distribution: mostly random, definitely unfair.
+      - contract: to be regretted later.
