@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
+  <title>scrotiegg – failure is the utility</title>
   {% seo %}
 
   <link rel="icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
@@ -25,73 +25,93 @@
   </div>
   <div id="about">
     <div class="profile-zone">
-      <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="My Photo">
+      <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo">
       <ul class="personal-info">
         {% if site.phone_number %}
-        <li><a aria-label="My Phone">
-          <img src="{{ '/assets/img/phone.svg' | prepend: site.baseurl }}" alt="My Phone Number">
-          <div><span>{{ site.phone_number }}</span></div>
-        </a></li>
+        <li>
+          <a aria-label="My Phone">
+            <img src="{{ '/assets/img/phone.svg' | prepend: site.baseurl }}" alt="Probably not working">
+            <div><span>dial at your own risk</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.address %}
-        <li><a aria-label="My Address" href="https://www.google.com/maps/search/{{ site.address }}">
-          <img src="{{ '/assets/img/location-dot.svg' | prepend: site.baseurl }}" alt="My Address">
-          <div><span>{{ site.address }}</span></div>
-        </a></li>
+        <li>
+          <a aria-label="My Address" href="https://www.google.com/maps/search/{{ site.address }}">
+            <img src="{{ '/assets/img/location-dot.svg' | prepend: site.baseurl }}" alt="Probably lost">
+            <div><span>probably lost</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.email %}
-          <li><a aria-label="My Email" href="mailto:{{ site.email }}">
-            <img src="{{ '/assets/img/envelope.svg' | prepend: site.baseurl }}" alt="My Email">
-            <div><span>{{ site.email }}</span></div>
-          </a></li>
+        <li>
+          <a aria-label="My Email" href="mailto:{{ site.email }}">
+            <img src="{{ '/assets/img/envelope.svg' | prepend: site.baseurl }}" alt="Barely checked mailbox">
+            <div><span>contact, but we rarely reply</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.linkedin_username %}
-          <li><a aria-label="My LinkedIn" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-            <img src="{{ '/assets/img/linkedin.svg' | prepend: site.baseurl }}" alt="My LinkedIn">
-            <div><span>@{{ site.linkedin_username }}</span></div>
-          </a></li>
+        <li>
+          <a aria-label="My LinkedIn" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+            <img src="{{ '/assets/img/linkedin.svg' | prepend: site.baseurl }}" alt="Unemployable">
+            <div><span>nobody hired us</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.github_username %}
-          <li><a aria-label="My Github" href="https://github.com/{{ site.github_username }}">
-            <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="My Github">
-            <div><span>@{{ site.github_username }}</span></div>
-          </a></li>
+        <li>
+          <a aria-label="My Github" href="https://github.com/{{ site.github_username }}">
+            <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="Bad ideas repository">
+            <div><span>bad ideas repository</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.twitter_username %}
-          <li><a aria-label="My Twitter" href="https://twitter.com/{{ site.twitter_username }}">
-            <img src="{{ '/assets/img/twitter.svg' | prepend: site.baseurl }}" alt="My Twitter">
-            <div><span>@{{ site.twitter_username }}</span></div>
-          </a></li>
+        <li>
+          <a aria-label="My Twitter" href="https://twitter.com/{{ site.twitter_username }}">
+            <img src="{{ '/assets/img/twitter.svg' | prepend: site.baseurl }}" alt="Where dreams go to die">
+            <div><span>where dreams go to die</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.instagram_username %}
-          <li><a aria-label="My Instagram" href="https://www.instagram.com/{{ site.instagram_username }}">
-            <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="My Instagram">
-            <div><span>@{{ site.instagram_username }}</span></div>
-          </a></li>
+        <li>
+          <a aria-label="My Instagram" href="https://www.instagram.com/{{ site.instagram_username }}">
+            <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="Pictures of failure">
+            <div><span>pictures of failure</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.facebook_username %}
-          <li><a aria-label="My Facebook" href="https://www.facebook.com/{{ site.facebook_username }}">
-            <img src="{{ '/assets/img/facebook.svg' | prepend: site.baseurl }}" alt="My Facebook">
-            <div><span>@{{ site.facebook_username }}</span></div>
-          </a></li>
+        <li>
+          <a aria-label="My Facebook" href="https://www.facebook.com/{{ site.facebook_username }}">
+            <img src="{{ '/assets/img/facebook.svg' | prepend: site.baseurl }}" alt="Where your mom invests">
+            <div><span>where your mom invests</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.youtube_username %}
-          <li><a aria-label="My Youtube" href="https://www.youtube.com/{{ site.youtube_username }}">
-            <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="My Youtube">
-            <div><span>@{{ site.youtube_username }}</span></div>
-          </a></li>
+        <li>
+          <a aria-label="My Youtube" href="https://www.youtube.com/{{ site.youtube_username }}">
+            <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="Useless tutorials">
+            <div><span>tutorials that never work</span></div>
+          </a>
+        </li>
         {% endif %}
         {% if site.blog_url %}
-          <li><a aria-label="My Blog" href="{{ site.blog_url }}">
-            <img src="{{ '/assets/img/house.svg' | prepend: site.baseurl }}" alt="My Blog">
-            <div><span>{{ site.blog_url }}</span></div>
-          </a></li>
+        <li>
+          <a aria-label="My Blog" href="{{ site.blog_url }}">
+            <img src="{{ '/assets/img/house.svg' | prepend: site.baseurl }}" alt="404 guaranteed">
+            <div><span>404 guaranteed</span></div>
+          </a>
+        </li>
         {% endif %}
       </ul>
     </div>
     <div class="name-zone">
-      <h1>{{ site.name }}</h1>
-      <h2>{{ site.job }}</h2>
+      <h1>scrotiegg (the original hairy egg)</h1>
+      <h2>first memecoin to embrace failure</h2>
     </div>
   </div>
   <div id="contents">
@@ -100,9 +120,17 @@
         <li class="subject" id="{{ subject.subject }}">
           <h2 class="subject-name">
             <div>
-              <img class="subject-icon" src="{{ subject.icon | prepend: site.baseurl }}" alt="{{ subject.subject | prepend: site.baseurl }}">
+              <img class="subject-icon" src="{{ subject.icon | prepend: site.baseurl }}" alt="icon of disappointment">
             </div>
-            {{ subject.subject }}
+            {%- case subject.subject | downcase -%}
+              {%- when "manifesto" -%}manifesto of defeat
+              {%- when "tokenomics" -%}numbers that don’t add up
+              {%- when "roadmap" -%}future disappointments
+              {%- when "team" -%}who to blame
+              {%- when "contact" -%}last resort
+              {%- when "blog" -%}bad advice
+              {%- else -%}{{ subject.subject }}
+            {%- endcase -%}
           </h2>
           <ul>
               {% for member in subject.contents %}
@@ -111,7 +139,7 @@
                     {{ member.title | markdownify }}
                     {% if member.date %}
                       <span class="content-date">
-                        <img src="{{ '/assets/img/calendar.webp' | prepend: site.baseurl}}" alt="date">
+                        <img src="{{ '/assets/img/calendar.webp' | prepend: site.baseurl}}" alt="date of disappointment">
                         {{ member.date }}
                       </span>
                     {% endif %}
@@ -140,7 +168,7 @@
   </div>
   <div id="footer">
     <span>
-      Copyright © 2024 | <a href="https://github.com/byanko55">Yankos</a>
+      Copyright © 2024 | made with regret by scrotum sapiens
     </span>
   </div>
 </body>
