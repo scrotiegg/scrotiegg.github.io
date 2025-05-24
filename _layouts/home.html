@@ -110,8 +110,8 @@
       </ul>
     </div>
     <div class="name-zone">
-      <h1>scrotiegg (the original hairy egg)</h1>
-      <h2>first memecoin to embrace failure</h2>
+      <h1>scrotiegg</h1>
+      <h2>no brains, just balls</h2>
     </div>
   </div>
   <div id="contents">
@@ -119,9 +119,6 @@
       {% for subject in meta %}
         <li class="subject" id="{{ subject.subject }}">
           <h2 class="subject-name">
-            <div>
-              <img class="subject-icon" src="{{ subject.icon | prepend: site.baseurl }}" alt="icon of disappointment">
-            </div>
             {%- case subject.subject | downcase -%}
               {%- when "manifesto" -%}manifesto of defeat
               {%- when "tokenomics" -%}numbers that don’t add up
