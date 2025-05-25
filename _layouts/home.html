@@ -26,87 +26,107 @@
   <div id="about">
     <div class="profile-zone">
       <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo">
-      <ul class="personal-info">
-        {% if site.phone_number %}
-        <li>
-          <a aria-label="My Twitter" href="https://x.com/{{ site.twitter_username }}">
-            <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="where dreams go to die">
-            <div><span>where dreams go to die</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.address %}
-        <li>
-          <a aria-label="My Address" href="https://www.google.com/maps/search/{{ site.address }}">
-            <img src="{{ '/assets/img/location-dot.svg' | prepend: site.baseurl }}" alt="Probably lost">
-            <div><span>probably lost</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.email %}
-        <li>
-          <a aria-label="My Email" href="mailto:{{ site.email }}">
-            <img src="{{ '/assets/img/envelope.svg' | prepend: site.baseurl }}" alt="Barely checked mailbox">
-            <div><span>contact, but we rarely reply</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.linkedin_username %}
-        <li>
-          <a aria-label="My LinkedIn" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-            <img src="{{ '/assets/img/linkedin.svg' | prepend: site.baseurl }}" alt="Unemployable">
-            <div><span>nobody hired us</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.github_username %}
-        <li>
-          <a aria-label="My Github" href="https://github.com/{{ site.github_username }}">
-            <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="Bad ideas repository">
-            <div><span>bad ideas repository</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.twitter_username %}
-        <li>
-          <a aria-label="My Twitter" href="https://twitter.com/{{ site.twitter_username }}">
-            <img src="{{ '/assets/img/twitter.svg' | prepend: site.baseurl }}" alt="Where dreams go to die">
-            <div><span>where dreams go to die</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.instagram_username %}
-        <li>
-          <a aria-label="My Instagram" href="https://www.instagram.com/{{ site.instagram_username }}">
-            <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="Pictures of failure">
-            <div><span>pictures of failure</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.facebook_username %}
-        <li>
-          <a aria-label="My Facebook" href="https://www.facebook.com/{{ site.facebook_username }}">
-            <img src="{{ '/assets/img/facebook.svg' | prepend: site.baseurl }}" alt="Where your mom invests">
-            <div><span>where your mom invests</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.youtube_username %}
-        <li>
-          <a aria-label="My Youtube" href="https://www.youtube.com/{{ site.youtube_username }}">
-            <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="Useless tutorials">
-            <div><span>tutorials that never work</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.blog_url %}
-        <li>
-          <a aria-label="My Blog" href="{{ site.blog_url }}">
-            <img src="{{ '/assets/img/house.svg' | prepend: site.baseurl }}" alt="404 guaranteed">
-            <div><span>404 guaranteed</span></div>
-          </a>
-        </li>
-        {% endif %}
+       <ul class="personal-info">
+  <!-- X (Twitter) -->
+  {% if site.x_username %}
+  <li>
+    <a aria-label="X" href="https://x.com/{{ site.x_username }}">
+      <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="where dreams go to die">
+      <div><span>where dreams go to die</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- Discord -->
+  {% if site.discord_username %}
+  <li>
+    <a aria-label="Discord" href="https://discord.gg/{{ site.discord_username }}">
+      <img src="{{ '/assets/img/discord.svg' | prepend: site.baseurl }}" alt="absolute chaos">
+      <div><span>absolute chaos</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- Instagram -->
+  {% if site.instagram_username %}
+  <li>
+    <a aria-label="Instagram" href="https://instagram.com/{{ site.instagram_username }}">
+      <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="pictures of failure">
+      <div><span>pictures of failure</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- TikTok -->
+  {% if site.tiktok_username %}
+  <li>
+    <a aria-label="TikTok" href="https://tiktok.com/@{{ site.tiktok_username }}">
+      <img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="viral disasters">
+      <div><span>viral disasters</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- Reddit -->
+  {% if site.reddit_username %}
+  <li>
+    <a aria-label="Reddit" href="https://reddit.com/user/{{ site.reddit_username }}">
+      <img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="meme laboratory">
+      <div><span>meme laboratory</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- YouTube -->
+  {% if site.youtube_username %}
+  <li>
+    <a aria-label="YouTube" href="https://youtube.com/@{{ site.youtube_username }}">
+      <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="useless tutorials">
+      <div><span>tutorials that never work</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- GitHub -->
+  {% if site.github_username %}
+  <li>
+    <a aria-label="GitHub" href="https://github.com/{{ site.github_username }}">
+      <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="bad ideas repository">
+      <div><span>bad ideas repository</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- Linktr.ee -->
+  {% if site.linktree_url %}
+  <li>
+    <a aria-label="Linktree" href="{{ site.linktree_url }}">
+      <img src="{{ '/assets/img/linktree.svg' | prepend: site.baseurl }}" alt="all eggs in one basket">
+      <div><span>all eggs in one basket</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- Threads -->
+  {% if site.threads_username %}
+  <li>
+    <a aria-label="Threads" href="https://threads.net/@{{ site.threads_username }}">
+      <img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="no thread of hope">
+      <div><span>no thread of hope</span></div>
+    </a>
+  </li>
+  {% endif %}
+
+  <!-- Spotify -->
+  {% if site.spotify_username %}
+  <li>
+    <a aria-label="Spotify" href="https://spotify.com/user/{{ site.spotify_username }}">
+      <img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="sad tunes">
+      <div><span>sad tunes</span></div>
+    </a>
+  </li>
+  {% endif %}
+
       </ul>
     </div>
     <div class="name-zone">
