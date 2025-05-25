@@ -6,15 +6,20 @@ layout: default
 h1, .page-title, .header-title, .site-title {
   display: none !important;
 }
-
 a[href*="Improve this page"], .gh-source {
   display: none !important;
 }
-
 body > p, body > div > p {
   display: none !important;
 }
+footer, .site-footer, #footer + p, #footer ~ p {
+  display: none !important;
+}
+p:contains("This site is open source") {
+  display: none !important;
+}
 </style>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
