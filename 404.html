@@ -3,6 +3,22 @@ permalink: /404.html
 layout: default
 ---
 <style>
+h1:not(.main404), .page-title, .header-title, .site-title {
+  display: none !important;
+}
+.main404 {
+  font-size: 6rem;
+  font-weight: 900;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -5px;
+  color: #7E5C3E;
+  display: block !important;
+  line-height: 0.9;
+  text-shadow: 0 6px 24px #0003;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
 h1, .page-title, .header-title, .site-title {
   display: none !important;
 }
@@ -126,7 +142,7 @@ body > p, body > div > p {
   </div>
   
   <div class="container">
-    <h2>404</h2>
+    <h1 class="main404">404</h1>
     <p><strong>not even this page made it</strong></p>
     <p>some failures aren’t planned. this page doesn’t exist. maybe it never did. maybe it was never meant to.</p>
     <p>go back to where things go wrong on purpose.</p>
