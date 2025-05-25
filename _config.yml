@@ -1,22 +1,29 @@
 title: scrotiegg – failure is the utility
-profile_img: /assets/img/scrotiegg.png     # coloque aqui a imagem do ovo cabeludo!
-icon_img: /assets/img/scrotiegg-icon.png   # coloque aqui o ícone engraçado
+profile_img: /assets/img/scrotiegg.png        # coloque aqui a imagem do ovo cabeludo!
+icon_img: /assets/img/scrotiegg-icon.png      # coloque aqui o ícone engraçado
 
 name: "scrotiegg (the original hairy egg)"
 job: "first memecoin to embrace failure"
 
 phone_number: dial at your own risk
 address: lost somewhere on the blockchain
-email: mailbox@scrotiegg.fun  # use seu e-mail ou uma fake divertida!
-linkedin_username: nobody-hired-us
-github_username: scrotiegg
-instagram_username: scrotiegg
-twitter_username: scrotiegg
-facebook_username: scrotiegg
-youtube_username: scrotiegg
-blog_url: https://scrotiegg.fun # ou um link para um 404 meme se preferir
+email: mailbox@scrotiegg.fun    # ou invente um fake divertido!
 
-baseurl: # (normalmente deixe em branco)
+# Socials (em ordem de destaque)
+x_username: scrotiegg           # X (Twitter)
+discord_username: scrotiegg     # Discord
+instagram_username: scrotiegg   # Instagram
+tiktok_username: scrotiegg      # TikTok
+reddit_username: scrotiegg      # Reddit
+youtube_username: scrotiegg     # YouTube
+github_username: scrotiegg      # GitHub
+linktree_url: https://linktr.ee/scrotiegg
+threads_username: scrotiegg     # Threads
+spotify_username: scrotiegg     # Spotify
+
+blog_url: https://scrotiegg.fun # pode usar o 404 meme se preferir
+
+baseurl: ""
 
 exclude:
   - _posts/
