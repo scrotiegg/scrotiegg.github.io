@@ -2,3 +2,121 @@
 permalink: /404.html
 layout: default
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>404 – not even this page made it | scrotiegg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+  <!-- TOPO COM REDES (igual à home) -->
+  <div id="about">
+    <div class="profile-zone">
+      <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo">
+      <ul class="personal-info">
+        {% if site.x_username %}
+        <li>
+          <a aria-label="X" href="https://x.com/{{ site.x_username }}">
+            <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="where dreams go to die">
+            <div><span>where dreams go to die</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.discord_username %}
+        <li>
+          <a aria-label="Discord" href="https://discord.gg/{{ site.discord_username }}">
+            <img src="{{ '/assets/img/discord.svg' | prepend: site.baseurl }}" alt="absolute chaos">
+            <div><span>absolute chaos</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.instagram_username %}
+        <li>
+          <a aria-label="Instagram" href="https://instagram.com/{{ site.instagram_username }}">
+            <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="pictures of failure">
+            <div><span>pictures of failure</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.tiktok_username %}
+        <li>
+          <a aria-label="TikTok" href="https://tiktok.com/@{{ site.tiktok_username }}">
+            <img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="viral disasters">
+            <div><span>viral disasters</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.reddit_username %}
+        <li>
+          <a aria-label="Reddit" href="https://reddit.com/user/{{ site.reddit_username }}">
+            <img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="meme laboratory">
+            <div><span>meme laboratory</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.youtube_username %}
+        <li>
+          <a aria-label="YouTube" href="https://youtube.com/@{{ site.youtube_username }}">
+            <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="useless tutorials">
+            <div><span>tutorials that never work</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.github_username %}
+        <li>
+          <a aria-label="GitHub" href="https://github.com/{{ site.github_username }}">
+            <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="bad ideas repository">
+            <div><span>bad ideas repository</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.facebook_username %}
+        <li>
+          <a aria-label="Facebook" href="https://facebook.com/{{ site.instagram_username }}">
+            <img src="{{ '/assets/img/facebook.svg' | prepend: site.baseurl }}" alt="where your mom invests">
+            <div><span>where your mom invests</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.threads_username %}
+        <li>
+          <a aria-label="Threads" href="https://threads.net/@{{ site.threads_username }}">
+            <img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="no thread of hope">
+            <div><span>no thread of hope</span></div>
+          </a>
+        </li>
+        {% endif %}
+        {% if site.spotify_username %}
+        <li>
+          <a aria-label="Spotify" href="https://spotify.com/user/{{ site.spotify_username }}">
+            <img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="sad tunes">
+            <div><span>sad tunes</span></div>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+    <div class="name-zone">
+      <h1>scrotiegg</h1>
+      <h2>no brains, just balls</h2>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO 404 -->
+  <div class="container">
+    <h1>404</h1>
+    <p><strong>not even this page made it</strong></p>
+    <p>some failures aren’t planned. this page doesn’t exist. maybe it never did. maybe it was never meant to.</p>
+    <p>go back to where things go wrong on purpose.</p>
+  </div>
+
+  <div id="footer">
+    <span>
+      copyright © 2025 - made with regret<br>by scrotie eggson
+    </span>
+  </div>
+</body>
+</html>
