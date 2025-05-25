@@ -3,17 +3,14 @@ permalink: /404.html
 layout: default
 ---
 <style>
-/* Esconde o título roxo gigante */
 h1, .page-title, .header-title, .site-title {
   display: none !important;
 }
 
-/* Esconde o link Improve this page */
 a[href*="Improve this page"], .gh-source {
   display: none !important;
 }
 
-/* Esconde o texto "This site is open source" se precisar */
 body > p, body > div > p {
   display: none !important;
 }
@@ -28,7 +25,6 @@ body > p, body > div > p {
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-  <!-- TOPO COM REDES (igual à home) -->
   <div id="about">
     <div class="profile-zone">
       <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo">
@@ -120,8 +116,7 @@ body > p, body > div > p {
       <h2>no brains, just balls</h2>
     </div>
   </div>
-
-  <!-- CONTEÚDO 404 -->
+  
   <div class="container">
     <h1>404</h1>
     <p><strong>not even this page made it</strong></p>
