@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>scrotiegg – failure is the utility</title>
+  <title>scrotiegg</title>
   {% seo %}
 
   <link rel="icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
@@ -27,7 +27,7 @@
     <div class="profile-zone">
       <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo">
        <ul class="personal-info">
-  <!-- X (Twitter) -->
+  <!-- X -->
   {% if site.x_username %}
   <li>
     <a aria-label="X" href="https://x.com/{{ site.x_username }}">
@@ -141,7 +141,7 @@
           <h2 class="subject-name">
             {%- case subject.subject | downcase -%}
               {%- when "manifesto" -%}manifesto of defeat
-             {%- when "album" -%}debut album
+              {%- when "album" -%}debut album
               {%- when "tokenomics" -%}numbers that don’t add up
               {%- when "roadmap" -%}future disappointments
               {%- when "team" -%}who to blame
