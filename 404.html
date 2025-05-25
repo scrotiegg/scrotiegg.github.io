@@ -9,13 +9,16 @@ h1, .page-title, .header-title, .site-title {
 a[href*="Improve this page"], .gh-source {
   display: none !important;
 }
-body > p, body > div > p {
+div.footer, .footer {
+  display: none !important;
+}
+p:has(a[href*="Improve this page"]) {
   display: none !important;
 }
 footer, .site-footer, #footer + p, #footer ~ p {
   display: none !important;
 }
-p:contains("This site is open source") {
+body > p, body > div > p {
   display: none !important;
 }
 </style>
