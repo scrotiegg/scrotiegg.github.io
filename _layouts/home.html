@@ -143,6 +143,7 @@
         <li class="subject" id="{{ subject.subject }}">
           <h2 class="subject-name">
             {%- case subject.subject | downcase -%}
+              {%- when "origin" -%}origin
               {%- when "manifesto" -%}manifesto of defeat
               {%- when "album" -%}debut album
               {%- when "tokenomics" -%}numbers that don’t add up
