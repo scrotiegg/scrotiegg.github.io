@@ -1,6 +1,8 @@
 subject: faq
 listing-order: 4
 contents:
+  - title: "album"
+    text: |
   - question: "is scrotiegg safe?"
     answer: "no."
   - question: "will scrotiegg make me rich?"
