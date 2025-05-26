@@ -167,14 +167,7 @@ a { text-decoration:none; }
         margin: 0;
     }
 
-
-
-
-
-
-
-    
-    .name-zone {
+    .name-zone h1 {
         font-size: 3rem !important;
         font-weight: 700 !important;
         color: var(--theme3-dark) !important;
@@ -186,7 +179,7 @@ a { text-decoration:none; }
         text-transform: lowercase !important; }
     
     .name-zone h2 { color: var(--theme4-dark); }
-}
+    }
 
 #contents{
     width: 85%;
