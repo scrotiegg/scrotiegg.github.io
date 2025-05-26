@@ -166,8 +166,25 @@ a { text-decoration:none; }
     .name-zone h2 {
         margin: 0;
     }
+
+
+
+
+
+
+
     
-    .name-zone h1 { color: var(--theme3-dark); }
+    .name-zone {
+        font-size: 3rem !important;
+        font-weight: 700 !important;
+        color: var(--theme3-dark) !important;
+        text-align: center !important;
+        font-family: 'Poppins', sans-serif !important;
+        margin: 2.5rem 0 1.5rem 0 !important;
+        line-height: 1.1 !important;
+        letter-spacing: -2px !important;
+        text-transform: lowercase !important; }
+    
     .name-zone h2 { color: var(--theme4-dark); }
 }
 
