@@ -460,3 +460,10 @@ a { text-decoration:none; }
 .subject-name {
   display: none;
 }
+
+.content-header {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--theme3-dark);
+  text-align: center;
+}
