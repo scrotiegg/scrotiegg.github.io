@@ -158,17 +158,15 @@
           <ul>
               {% for member in subject.contents %}
               <li class="item">
-                  <div class="content-header">
-                    {% if member.title and member.title != subject.subject %}
-                      {{ member.title | markdownify }}
-                    {% endif %}
-                    {% if member.date %}
-                      <span class="content-date">
-                        <img src="{{ '/assets/img/calendar.webp' | prepend: site.baseurl}}" alt="date of disappointment">
-                        {{ member.date }}
-                      </span>
-                    {% endif %}
-                  </div>
+                 <div class="content-header">
+  {{ member.title | markdownify }}
+  {% if member.date %}
+    <span class="content-date">
+      <img src="{{ '/assets/img/calendar.webp' | prepend: site.baseurl}}" alt="date of disappointment">
+      {{ member.date }}
+    </span>
+  {% endif %}
+</div>
                   {% for item in member %}
                     {% if item[0] != "title" and item[0] != "date" %}
                       {% if item[1].first %}
