@@ -461,9 +461,5 @@ a { text-decoration:none; }
   display: none;
 }
 
-.content-header {
-  font-size: 3rem;
-  font-weight: 700;
-  color: var(--theme3-dark);
-  text-align: center;
+.content-header h1 { color: var(--theme3-dark);
 }
