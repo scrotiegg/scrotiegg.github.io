@@ -1,7 +1,7 @@
 subject: album
 listing-order: 4
 contents:
- - title: "album"
+  - title: "album"
     text: |
       behold, the debut album that nobody asked for.
 
