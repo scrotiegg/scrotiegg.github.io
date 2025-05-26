@@ -457,11 +457,6 @@ a { text-decoration:none; }
     }
 }
 
-.subject-name {
-  display: none;
-}
-
-/* Força o título do YAML a ficar igual ao h1 da home */
 .item .content-header > p:first-child {
   font-size: 3rem !important;
   font-weight: 700 !important;
@@ -471,7 +466,7 @@ a { text-decoration:none; }
   margin: 2.5rem 0 1.5rem 0 !important;
   line-height: 1.1 !important;
   letter-spacing: -2px !important;
-  text-transform: lowercase !important; /* Igual ao seu h1, se usar minúsculo */
+  text-transform: lowercase !important;
 }
 
 
