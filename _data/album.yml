@@ -1,7 +1,6 @@
 subject: debut album
 listing-order: 4
 contents:
-  - title: "the hairy egg chronicles: debut album"
     text: |
       behold, the debut album that nobody asked for.
 
@@ -9,9 +8,9 @@ contents:
 
       out now on no major platforms. maybe your neighbor's USB stick.
 
-      ![album cover](assets/img/scrotiegg-debut-cover.png)
+      ![album cover](assets/img/albumcover.png)
 
-      <img src="assets/img/scrotiegg-debut-cover.png" alt="scrotiegg debut album cover" width="260" style="border-radius:18px; box-shadow:0 2px 16px #0007; margin-top:14px;">
+      <img src="assets/img/albumcover.png" alt="scrotiegg debut album cover" width="260" style="border-radius:18px; box-shadow:0 2px 16px #0007; margin-top:14px;">
 
       **tracklist highlights:**
       - pump & dump blues
