@@ -1,7 +1,7 @@
 subject: tokenomics
 listing-order: 3
 contents:
- - title: "numbers that don’t add up"
+ - title: "tokenomics"
     text: |
       - supply: 1,000,000,000
       - utility: who needs it?
