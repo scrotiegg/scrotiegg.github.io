@@ -469,3 +469,8 @@ a { text-decoration:none; }
   margin: 2rem 0 1rem 0;  /* opcional, para espaçamento bonito */
   font-family: 'Poppins', sans-serif;
 }
+
+.content-header > p {
+  font-size: 3rem;
+  ...
+}
