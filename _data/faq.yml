@@ -1,41 +1,58 @@
 subject: faq
 listing-order: 4
 contents:
-  - title: "faq"
+  - title: "frequently avoided questions"
     text: |
-  - question: "is scrotiegg safe?"
-    answer: "no."
-  - question: "will scrotiegg make me rich?"
-    answer: "probably not. maybe poorer."
-  - question: "why should i buy scrotiegg?"
-    answer: "because you’ve made worse decisions."
-  - question: "does scrotiegg have any utility?"
-    answer: "none. not even as a joke."
-  - question: "can i trust this project?"
-    answer: "only if you've already lost faith in everything else."
-  - question: "who is the team?"
-    answer: "anonymous, ashamed, and probably gone by the time you read this."
-  - question: "where can i buy scrotiegg?"
-    answer: "on pump.fun. but ask yourself: should you?"
-  - question: "will there be airdrops or rewards?"
-    answer: "no. we’re not that organized."
-  - question: "will there be a rugpull?"
-    answer: "if there is, at least you saw it coming."
-  - question: "is this a scam?"
-    answer: "define “scam.”"
-  - question: "is there a roadmap?"
-    answer: "yes. see above. it’s as reliable as your ex’s promises."
-  - question: "can i make suggestions to the project?"
-    answer: "sure. they’ll probably be ignored."
-  - question: "is there an nft collection?"
-    answer: "maybe one day. or never. who knows?"
-  - question: "is scrotiegg audited?"
-    answer: "only by our own regrets."
-  - question: "what if i lose money?"
-    answer: "that’s the spirit."
-  - question: "is this financial advice?"
-    answer: "do we look like financial advisors?"
-  - question: "how do i explain to my friends i bought this?"
-    answer: "just say it was for the memes. or blame the dev."
-  - question: "will scrotiegg ever be listed on big exchanges?"
-    answer: "only if the universe runs out of other coins."
+      Q: is scrotiegg safe?
+      A: no.
+
+      Q: will scrotiegg make me rich?
+      A: probably not. maybe poorer.
+
+      Q: why should i buy scrotiegg?
+      A: because you’ve made worse decisions.
+
+      Q: does scrotiegg have any utility?
+      A: none. not even as a joke.
+
+      Q: can i trust this project?
+      A: only if you've already lost faith in everything else.
+
+      Q: who is the team?
+      A: anonymous, ashamed, and probably gone by the time you read this.
+
+      Q: where can i buy scrotiegg?
+      A: on pump.fun. but ask yourself: should you?
+
+      Q: will there be airdrops or rewards?
+      A: no. we’re not that organized.
+
+      Q: will there be a rugpull?
+      A: if there is, at least you saw it coming.
+
+      Q: is this a scam?
+      A: define “scam.”
+
+      Q: is there a roadmap?
+      A: yes. see above. it’s as reliable as your ex’s promises.
+
+      Q: can i make suggestions to the project?
+      A: sure. they’ll probably be ignored.
+
+      Q: is there an nft collection?
+      A: maybe one day. or never. who knows?
+
+      Q: is scrotiegg audited?
+      A: only by our own regrets.
+
+      Q: what if i lose money?
+      A: that’s the spirit.
+
+      Q: is this financial advice?
+      A: do we look like financial advisors?
+
+      Q: how do i explain to my friends i bought this?
+      A: just say it was for the memes. or blame the dev.
+
+      Q: will scrotiegg ever be listed on big exchanges?
+      A: only if the universe runs out of other coins.
