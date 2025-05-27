@@ -141,22 +141,22 @@
     <ul>
       {% for subject in meta %}
         <li class="subject" id="{{ subject.subject }}">
-          <h2 class="subject-name">
-            {%- case subject.subject | downcase -%}
-              {%- when "origin" -%}origin
-              {%- when "manifesto" -%}manifesto
-              {%- when "vision" -%}vision
-              {%- when "album" -%}album
-              {%- when "disclaimer" -%}disclaimer
-              {%- when "tokenomics" -%}tokenomics
-              {%- when "roadmap" -%}roadmap
-              {%- when "team" -%}team
-              {%- when "contact" -%}contact
-              {%- when "faq" -%}faq
-              {%- when "blog" -%}blog
-              {%- else -%}{{ subject.subject }}
-            {%- endcase -%}
-          </h2>
+  <h2 class="subject-name">
+    {%- case subject.subject | downcase -%}
+      {%- when "manifesto" -%}manifesto
+      {%- when "origin" -%}origin
+      {%- when "vision" -%}vision
+      {%- when "tokenomics" -%}tokenomics
+      {%- when "album" -%}album
+      {%- when "faq" -%}faq
+      {%- when "disclaimer" -%}disclaimer
+      {%- when "roadmap" -%}roadmap
+      {%- when "team" -%}team
+      {%- when "contact" -%}contact
+      {%- when "blog" -%}blog
+      {%- else -%}{{ subject.subject }}
+    {%- endcase -%}
+  </h2>
           <ul>
               {% for member in subject.contents %}
               <li class="item">
