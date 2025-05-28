@@ -523,6 +523,31 @@ b, strong {
 }
 
 @media (max-width: 767px) {
+  #sidebar .toc-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  #sidebar .toc-box li {
+    width: 100%;
+    text-align: center;
+    margin: 0.7rem 0;
+  }
+
+  #sidebar .toc-box a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--font-dark);
+    transition: color 0.2s;
+  }
+}
+
   #mobile-menu-toggle {
     display: flex;
   }
