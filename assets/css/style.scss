@@ -597,3 +597,29 @@ b, strong {
     padding-top: 0;
   }
 }
+
+#sidebar .toc-box {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#sidebar .toc-box li {
+  width: 100%;
+  text-align: center !important;
+  margin: 0.7rem 0 !important;
+}
+
+#sidebar .toc-box a {
+  display: inline-block !important;
+  width: 100% !important;
+  text-align: center !important;
+  font-size: 1.3rem !important;
+  font-weight: 400 !important;
+  color: var(--font-dark) !important;
+  transition: color 0.2s;
+}
