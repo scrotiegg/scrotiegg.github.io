@@ -18,28 +18,8 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<script>
-  const sidebar = document.getElementById('sidebar');
-  const toggle = document.getElementById('mobile-menu-toggle');
-  toggle.addEventListener('click', function(e) {
-    e.stopPropagation();
-    sidebar.classList.toggle('open');
-    toggle.classList.toggle('active');
-  });
 
-  // Fecha ao clicar fora do menu
-  document.addEventListener('click', function(e){
-    if (window.innerWidth <= 767) {
-      if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && !toggle.contains(e.target)){
-        sidebar.classList.remove('open');
-        toggle.classList.remove('active');
-      }
-    }
-  });
-</script>
-
-<body>
-  <button id="mobile-menu-toggle" aria-label="Open menu">
+<button id="mobile-menu-toggle" aria-label="Open menu">
   <span></span>
   <span></span>
   <span></span>
@@ -220,6 +200,32 @@
       copyright © 2025 - made with regret<br>by scrotie eggson
     </span>
   </div>
+  <script src="/assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const sidebar = document.getElementById('sidebar');
+
+  toggle.addEventListener('click', function() {
+    toggle.classList.toggle('active');
+    sidebar.classList.toggle('open');
+  });
+  
+  sidebar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.classList.remove('active');
+      sidebar.classList.remove('open');
+    });
+  });
+
+  window.addEventListener('resize', function() {
+    if(window.innerWidth > 767) {
+      toggle.classList.remove('active');
+      sidebar.classList.remove('open');
+    }
+  });
+});
+</script>
 </body>
 <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
 </html>
