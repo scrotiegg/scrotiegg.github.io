@@ -18,8 +18,32 @@
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const toggle = document.getElementById('mobile-menu-toggle');
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    sidebar.classList.toggle('open');
+    toggle.classList.toggle('active');
+  });
+
+  // Fecha ao clicar fora do menu
+  document.addEventListener('click', function(e){
+    if (window.innerWidth <= 767) {
+      if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && !toggle.contains(e.target)){
+        sidebar.classList.remove('open');
+        toggle.classList.remove('active');
+      }
+    }
+  });
+</script>
 
 <body>
+  <button id="mobile-menu-toggle" aria-label="Open menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
   
   <div id="sidebar">
     <ul class="toc-box"></ul>
