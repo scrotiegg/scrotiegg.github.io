@@ -512,7 +512,6 @@ b, strong {
   position: relative;
 }
 
-/* Animação para virar X quando ativo */
 #mobile-menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(7px, 7px);
 }
@@ -523,13 +522,12 @@ b, strong {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Só aparece no mobile */
 @media (max-width: 767px) {
   #mobile-menu-toggle {
     display: flex;
   }
   #sidebar {
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     right: 0;
@@ -540,13 +538,37 @@ b, strong {
     z-index: 2000;
     padding-top: 72px;
     box-shadow: -3px 0 16px #0003;
-    transition: transform 0.25s cubic-bezier(.55,.16,.35,.87);
+    transition: opacity .3s, transform .25s cubic-bezier(.55,.16,.35,.87);
     transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
     border-radius: 36px 0 0 36px;
     text-align: left;
   }
   #sidebar.open {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
     transform: translateX(0%);
+  }
+}
+
+@media (min-width: 1024px) {
+  #mobile-menu-toggle { display: none; }
+  #sidebar {
+    display: block !important;
+    position: fixed;
+    width: 128px;
+    top: 320px;
+    right: 0;
+    z-index: 1;
+    font-size: 14px;
+    box-shadow: none;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: none !important;
+    background: var(--theme3-medium, #C19A6B);
+    border-radius: 0;
+    height: auto;
+    padding-top: 0;
   }
 }
