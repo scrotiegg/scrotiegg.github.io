@@ -84,6 +84,7 @@ a { text-decoration: none; }
     height: 100vh;
     z-index: 2000;
     padding-top: 72px;
+    padding-right: 72px;
     box-shadow: -3px 0 16px #0003;
     transition: opacity .3s, transform .25s cubic-bezier(.55,.16,.35,.87);
     transform: translateX(100%);
