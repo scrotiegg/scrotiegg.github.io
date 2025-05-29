@@ -68,7 +68,13 @@ document.addEventListener('DOMContentLoaded', function(){
       '/assets/img/banner1.png',
       '/assets/img/banner2.png',
       '/assets/img/banner3.png',
-      '/assets/img/banner4.png'
+      '/assets/img/banner4.png',
+      '/assets/img/banner5.png',
+      '/assets/img/banner6.png',
+      '/assets/img/banner7.png',
+      '/assets/img/banner8.png',
+      '/assets/img/banner9.png',
+      '/assets/img/banner10.png'
     ];
 
     var bannerContainer = document.createElement('div');
