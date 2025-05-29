@@ -350,51 +350,6 @@ img { aspect-ratio: auto; max-width: 320px; }
     }
 }
 
-/* ------ DESKTOP SIDEBAR ------ */
-@media (min-width: 1024px) {
-    #mobile-menu-toggle { display: none; }
-    #sidebar {
-        display: block !important;
-        position: fixed;
-        width: 128px;
-        top: 320px;
-        right: 0;
-        z-index: 1;
-        font-size: 14px;
-        box-shadow: none;
-        opacity: 1 !important;
-        pointer-events: auto !important;
-        transform: none !important;
-        background: var(--theme3-medium, #C19A6B);
-        border-radius: 0;
-        height: auto;
-        padding-top: 0;
-    }
-    #sidebar .toc-box {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: flex-start;
-        width: 100%;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    #sidebar .toc-box li {
-        width: 100%;
-        text-align: center !important;
-        margin: 0.1rem 0 !important;
-    }
-    #sidebar .toc-box a {
-        display: inline-block !important;
-        width: 100% !important;
-        text-align: center !important;
-        font-size: 1.3rem !important;
-        font-weight: 400 !important;
-        color: var(--font-dark) !important;
-        transition: color 0.2s;
-    }
-}
-
 /* HEADERS DE ITENS */
 .item .content-header > p:first-child {
     font-size: 2.2rem !important;
