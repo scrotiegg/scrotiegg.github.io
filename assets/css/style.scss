@@ -332,7 +332,7 @@ img { aspect-ratio: auto; max-width: 320px; }
     #sidebar .toc-box li {
         width: 100%;
         text-align: center !important;
-        margin: 0.7rem 0 !important;
+        margin: 0.2rem 0 !important;
     }
     #sidebar .toc-box a {
         display: inline-block !important;
@@ -342,6 +342,8 @@ img { aspect-ratio: auto; max-width: 320px; }
         font-weight: 400 !important;
         color: var(--font-dark) !important;
         transition: color 0.2s;
+        padding-top: 0.2rem !important;
+        padding-bottom: 0.2rem !important;
     }
 }
 
