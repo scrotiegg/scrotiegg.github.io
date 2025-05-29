@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var imgs = bannerContainer.querySelectorAll('img');
       var totalWidth = 0;
       for (let i = 0; i < images.length; i++) {
-        totalWidth += imgs[i].width + 24;
+        totalWidth += imgs[i].width + 2;
       }
       // Atualiza o keyframe dinamicamente para looping perfeito
       var styleSheet = document.createElement('style');
