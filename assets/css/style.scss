@@ -334,3 +334,28 @@ img { aspect-ratio: auto; max-width: 320px; }
 }
 
 b, strong { font-weight: 700 !important; }
+
+.banner-carousel {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+}
+.banner-carousel-inner {
+  display: flex;
+  width: max-content;
+  animation: scroll-banner 16s linear infinite;
+}
+.banner-carousel-inner img {
+  height: 180px;
+  width: auto;
+  margin-right: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px #0002;
+}
+@keyframes scroll-banner {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* será ajustado via JS para looping perfeito */
+}
+
