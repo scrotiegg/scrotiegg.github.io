@@ -297,7 +297,7 @@ img { aspect-ratio: auto; max-width: 320px; }
 }
 
 /* MOBILE SIDEBAR E CENTRALIZAÇÃO DOS SUBJECTS */
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     #mobile-menu-toggle { display: flex; }
     #sidebar {
         display: block;
