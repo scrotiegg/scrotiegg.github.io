@@ -258,7 +258,7 @@ img { aspect-ratio: auto; max-width: 320px; }
 
 /* ------ MOBILE MENU ------ */
 #mobile-menu-toggle {
-  display: none;
+  display: flex;
   position: fixed;
   top: 10px;
   right: 10px;
@@ -297,10 +297,9 @@ img { aspect-ratio: auto; max-width: 320px; }
 }
 
 /* MOBILE SIDEBAR E CENTRALIZAÇÃO DOS SUBJECTS */
-@media (max-width: 1023px) {
-    #mobile-menu-toggle { display: flex; }
+
     #sidebar {
-        display: block;
+        display: none;
         position: fixed;
         top: 0;
         right: 0;
