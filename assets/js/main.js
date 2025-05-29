@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function(){
         .banner-carousel {
           overflow: hidden;
           width: 100%;
-          margin: 2rem 0;
+          margin: 0.5rem 0;
         }
       `;
       document.head.appendChild(styleSheet);
