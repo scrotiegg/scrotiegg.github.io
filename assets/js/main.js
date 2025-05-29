@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function(){
     function slugify(text) {
         return text.toLowerCase().replace(/[^\w]+/g, '-');
     }
-
+// Limpa o menu lateral antes de criar os itens (previne duplicação!)
+    tocbox.innerHTML = "";
     headers.forEach((h) => {
         // Garante que cada header tem um id único
         let headerId = 'subject-' + slugify(h.textContent);
