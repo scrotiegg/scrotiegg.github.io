@@ -2,20 +2,29 @@ document.addEventListener('DOMContentLoaded', function(){
     const tocbox = document.querySelector('.toc-box');
     var headers = document.querySelectorAll('.subject-name');
 
+    function slugify(text) {
+        return text.toLowerCase().replace(/[^\w]+/g, '-');
+    }
+
     headers.forEach((h) => {
+        // Garante que cada header tem um id único
+        let headerId = 'subject-' + slugify(h.textContent);
+        h.id = headerId;
+
         let tocItem = document.createElement("li");
-        tocItem.id = "toc-id-" + h.textContent;
+        tocItem.id = "toc-id-" + headerId;
 
         let itemLink = document.createElement("a");
         itemLink.classList.add("content-link");
         itemLink.textContent = h.textContent;
+        itemLink.href = "#" + headerId; // agora tem href
 
         tocItem.append(itemLink);
 
-        tocItem.addEventListener('click', function(){
-            h.scrollIntoView({
-                behavior: 'smooth'
-            });
+        // Navegação suave ao clicar
+        itemLink.addEventListener('click', function(e){
+            e.preventDefault();
+            h.scrollIntoView({ behavior: 'smooth' });
         });
 
         tocbox.append(tocItem);
@@ -35,23 +44,19 @@ document.addEventListener('DOMContentLoaded', function(){
 
         Array.from(headers).forEach(function(h){
             let headPos = h.getBoundingClientRect().top + window.scrollY - wh/2;
-
             if (scrollPos > headPos) currHead = h;
         });
 
         Array.from(contents).forEach(function(c){
             let contentPos = c.getBoundingClientRect().top + window.scrollY - wh;
-
             if (c.classList.contains("appear")) return;
-
             if (scrollPos < contentPos) return;
-
             c.classList.add('appear');
         });
 
         if (currHead != undefined){
-            let tocLink = document.getElementById("toc-id-" + currHead.textContent);
-            tocLink.classList.add('active');
+            let tocLink = document.getElementById("toc-id-" + currHead.id);
+            if (tocLink) tocLink.classList.add('active');
         }
     }, 200);
 });
