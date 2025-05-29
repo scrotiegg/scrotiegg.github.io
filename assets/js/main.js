@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function(){
         .banner-carousel-inner {
           display: flex;
           align-items: center;
-          animation: scroll-banner ${Math.max(18, images.length * 4)}s linear infinite;
+          animation: scroll-banner ${Math.max(12, images.length * 1.2)}s linear infinite;
         }
         .banner-carousel {
           overflow: hidden;
@@ -118,6 +118,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }
       `;
       document.head.appendChild(styleSheet);
-      bannerContainer.style.animation = `scroll-banner ${Math.max(18, images.length * 4)}s linear infinite`;
+      bannerContainer.style.animation = `scroll-banner ${Math.max(12, images.length * 1.2)}s linear infinite`;
     }, 250);
 });
