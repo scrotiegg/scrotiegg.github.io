@@ -351,7 +351,7 @@ img { aspect-ratio: auto; max-width: 320px; }
 }
 
 /* ------ DESKTOP SIDEBAR ------ */
-
+@media (min-width: 1024px) {
     #mobile-menu-toggle { display: none; }
     #sidebar {
         display: block !important;
