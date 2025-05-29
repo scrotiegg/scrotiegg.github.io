@@ -79,7 +79,7 @@ a { text-decoration: none; }
     top: 0;
     right: 0;
     background: var(--theme3-medium, #C19A6B);
-    width: 74vw;
+    width: 54vw;
     max-width: 300px;
     height: 100vh;
     z-index: 2000;
@@ -89,7 +89,7 @@ a { text-decoration: none; }
     transform: translateX(100%);
     opacity: 0;
     pointer-events: none;
-    border-radius: 36px 0 0 0px;
+    border-radius: 36px 0 0 36px;
     text-align: center;
 }
 #sidebar.open {
