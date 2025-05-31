@@ -152,7 +152,7 @@
       {%- when "vision" -%}vision
       {%- when "tokenomics" -%}tokenomics
       {%- when "album" -%}album
-      {%- when "nft collection" -%}nft collection
+      {%- when "nft" -%}nft
       {%- when "faq" -%}faq
       {%- when "disclaimer" -%}disclaimer
       {%- else -%}{{ subject.subject }}
@@ -160,6 +160,9 @@
   </h2>
     {% if page.url == "/album/" %}
       <iframe src=https://audius.co/embed/track/4grN8p4?flavor=card width="100%" height="480" allow="encrypted-media" style="border: none;"></iframe>
+    {% endif %}
+    {% if page.url == "/nft/" %}
+      <div id="banner-carousel" class="banner-carousel"></div>
     {% endif %}
           <ul>
               {% for member in subject.contents %}
