@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var img = document.createElement('img');
       img.src = src;
       img.style.height = "100px";
-      img.style.width = "100px";
+      img.style.width = "auto";
       img.style.marginRight = "2px";
       bannerContainer.appendChild(img);
     });
