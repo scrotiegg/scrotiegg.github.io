@@ -363,7 +363,7 @@ b, strong { font-weight: 700 !important; }
 /* Banner responsivo para telas menores */
 @media (max-width: 600px) {
   .banner-carousel {
-    height: 64px;
+    height: 100px;
   }
   .banner-carousel-inner img {
     height: 48px;
