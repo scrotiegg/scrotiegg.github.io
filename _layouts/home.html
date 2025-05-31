@@ -170,21 +170,26 @@
     </span>
   {% endif %}
 </div>
-                  {% for item in member %}
-                    {% if item[0] != "title" and item[0] != "date" %}
-                      {% if item[1].first %}
-                        <ul>
-                          {% for subitem in item[1] %}
-                          <li class="subitem">
-                            {{ subitem | markdownify }}
-                          </li>
-                          {% endfor %}
-                        </ul>
-                      {% else %}
-                        {{ item[1] | markdownify }}
-                      {% endif %}
-                    {% endif %}
-                  {% endfor %}
+                 {% for item in member %}
+  {% if item[0] != "title" and item[0] != "date" %}
+    {% if item[1].first %}
+      <ul>
+        {% for subitem in item[1] %}
+        <li class="subitem">
+          {{ subitem | markdownify }}
+        </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      {% if subject.subject == "album" and item[0] == "text" %}
+        {{ item[1] }}
+      {% else %}
+        {{ item[1] | markdownify }}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
               </li>
               {% endfor %}
           </ul>
