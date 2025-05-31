@@ -82,7 +82,8 @@ document.addEventListener('DOMContentLoaded', function(){
     images.concat(images).forEach(function(src) {
       var img = document.createElement('img');
       img.src = src;
-      img.style.height = "200px";
+      img.style.height = "100px";
+      img.style.width = "100px";
       img.style.marginRight = "2px";
       bannerContainer.appendChild(img);
     });
