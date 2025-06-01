@@ -122,3 +122,4 @@ document.addEventListener('DOMContentLoaded', function(){
       bannerContainer.style.animation = `scroll-banner ${Math.max(12, images.length * 1.2)}s linear infinite`;
     }, 250);
 });
+
