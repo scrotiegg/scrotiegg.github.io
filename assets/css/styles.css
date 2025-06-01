@@ -41,7 +41,7 @@ a { text-decoration: none; }
    MENU HAMBÚRGUER GLOBAL
    ====================== */
 #mobile-menu-toggle {
-    display: flex;
+    display: flex !important; /* garantir que apareça */
     position: fixed;
     top: 10px;
     right: 10px;
