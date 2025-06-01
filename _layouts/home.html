@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>scrotiegg</title>
+  <title>{{ site.title }}</title>
   {% seo %}
 
   <link rel="icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
@@ -19,177 +19,118 @@
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
-<button id="mobile-menu-toggle" aria-label="Open menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-  
+<body>
   <div id="sidebar">
     <ul class="toc-box"></ul>
   </div>
   <div id="about">
     <div class="profile-zone">
-      <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo">
-       <ul class="personal-info">
-  <!-- X -->
-  {% if site.x_username %}
-  <li>
-    <a aria-label="X" href="https://x.com/{{ site.x_username }}">
-      <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="where dreams go to die">
-      <div><span>where dreams go to die</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Discord -->
-  {% if site.discord_username %}
-  <li>
-    <a aria-label="Discord" href="https://discord.gg/{{ site.discord_username }}">
-      <img src="{{ '/assets/img/discord.svg' | prepend: site.baseurl }}" alt="absolute chaos">
-      <div><span>absolute chaos</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Instagram -->
-  {% if site.instagram_username %}
-  <li>
-    <a aria-label="Instagram" href="https://instagram.com/{{ site.instagram_username }}">
-      <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="pictures of failure">
-      <div><span>pictures of failure</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- TikTok -->
-  {% if site.tiktok_username %}
-  <li>
-    <a aria-label="TikTok" href="https://tiktok.com/@{{ site.tiktok_username }}">
-      <img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="viral disasters">
-      <div><span>viral disasters</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Reddit -->
-  {% if site.reddit_username %}
-  <li>
-    <a aria-label="Reddit" href="https://reddit.com/user/{{ site.reddit_username }}">
-      <img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="meme laboratory">
-      <div><span>meme laboratory</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- YouTube -->
-  {% if site.youtube_username %}
-  <li>
-    <a aria-label="YouTube" href="https://youtube.com/@{{ site.youtube_username }}">
-      <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="useless tutorials">
-      <div><span>tutorials that never work</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- GitHub -->
-  {% if site.github_username %}
-  <li>
-    <a aria-label="GitHub" href="https://github.com/{{ site.github_username }}">
-      <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="bad ideas repository">
-      <div><span>bad ideas repository</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Facebook -->
-  {% if site.facebook_username %}
-  <li>
-    <a aria-label="Facebook" href="https://facebook.com/{{ site.instagram_username }}">
-      <img src="{{ '/assets/img/facebook.svg' | prepend: site.baseurl }}" alt="where your mom invests">
-      <div><span>where your mom invests</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Threads -->
-  {% if site.threads_username %}
-  <li>
-    <a aria-label="Threads" href="https://threads.net/@{{ site.threads_username }}">
-      <img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="no thread of hope">
-      <div><span>no thread of hope</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Spotify -->
-  {% if site.spotify_username %}
-  <li>
-    <a aria-label="Spotify" href="https://spotify.com/user/{{ site.spotify_username }}">
-      <img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="sad tunes">
-      <div><span>sad tunes</span></div>
-    </a>
-  </li>
-  {% endif %}
-
+      <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="My Photo">
+      <ul class="personal-info">
+        {% if site.phone_number %}
+        <li><a aria-label="My Phone">
+          <img src="{{ '/assets/img/phone.svg' | prepend: site.baseurl }}" alt="My Phone Number">
+          <div><span>{{ site.phone_number }}</span></div>
+        </a></li>
+        {% endif %}
+        {% if site.address %}
+        <li><a aria-label="My Address" href="https://www.google.com/maps/search/{{ site.address }}">
+          <img src="{{ '/assets/img/location-dot.svg' | prepend: site.baseurl }}" alt="My Address">
+          <div><span>{{ site.address }}</span></div>
+        </a></li>
+        {% endif %}
+        {% if site.email %}
+          <li><a aria-label="My Email" href="mailto:{{ site.email }}">
+            <img src="{{ '/assets/img/envelope.svg' | prepend: site.baseurl }}" alt="My Email">
+            <div><span>{{ site.email }}</span></div>
+          </a></li>
+        {% endif %}
+        {% if site.linkedin_username %}
+          <li><a aria-label="My LinkedIn" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+            <img src="{{ '/assets/img/linkedin.svg' | prepend: site.baseurl }}" alt="My LinkedIn">
+            <div><span>@{{ site.linkedin_username }}</span></div>
+          </a></li>
+        {% endif %}
+        {% if site.github_username %}
+          <li><a aria-label="My Github" href="https://github.com/{{ site.github_username }}">
+            <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="My Github">
+            <div><span>@{{ site.github_username }}</span></div>
+          </a></li>
+        {% endif %}
+        {% if site.twitter_username %}
+          <li><a aria-label="My Twitter" href="https://twitter.com/{{ site.twitter_username }}">
+            <img src="{{ '/assets/img/twitter.svg' | prepend: site.baseurl }}" alt="My Twitter">
+            <div><span>@{{ site.twitter_username }}</span></div>
+          </a></li>
+        {% endif %}
+        {% if site.instagram_username %}
+          <li><a aria-label="My Instagram" href="https://www.instagram.com/{{ site.instagram_username }}">
+            <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="My Instagram">
+            <div><span>@{{ site.instagram_username }}</span></div>
+          </a></li>
+        {% endif %}
+        {% if site.facebook_username %}
+          <li><a aria-label="My Facebook" href="https://www.facebook.com/{{ site.facebook_username }}">
+            <img src="{{ '/assets/img/facebook.svg' | prepend: site.baseurl }}" alt="My Facebook">
+            <div><span>@{{ site.facebook_username }}</span></div>
+          </a></li>
+        {% endif %}
+        {% if site.youtube_username %}
+          <li><a aria-label="My Youtube" href="https://www.youtube.com/{{ site.youtube_username }}">
+            <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="My Youtube">
+            <div><span>@{{ site.youtube_username }}</span></div>
+          </a></li>
+        {% endif %}
+        {% if site.blog_url %}
+          <li><a aria-label="My Blog" href="{{ site.blog_url }}">
+            <img src="{{ '/assets/img/house.svg' | prepend: site.baseurl }}" alt="My Blog">
+            <div><span>{{ site.blog_url }}</span></div>
+          </a></li>
+        {% endif %}
       </ul>
     </div>
-
-      <div class="name-zone">
-      <h1>scrotiegg</h1>
-      <h2>no brains, just balls</h2>
+    <div class="name-zone">
+      <h1>{{ site.name }}</h1>
+      <h2>{{ site.job }}</h2>
     </div>
-
   </div>
   <div id="contents">
     <ul>
       {% for subject in meta %}
         <li class="subject" id="{{ subject.subject }}">
-  <h2 class="subject-name">
-    {%- case subject.subject | downcase -%}
-      {%- when "manifesto" -%}manifesto
-      {%- when "origin" -%}origin
-      {%- when "vision" -%}vision
-      {%- when "tokenomics" -%}tokenomics
-      {%- when "album" -%}album
-      {%- when "nft" -%}nft
-      {%- when "faq" -%}faq
-      {%- when "disclaimer" -%}disclaimer
-      {%- else -%}{{ subject.subject }}
-    {%- endcase -%}
-  </h2>
+          <h2 class="subject-name">
+            <div>
+              <img class="subject-icon" src="{{ subject.icon | prepend: site.baseurl }}" alt="{{ subject.subject | prepend: site.baseurl }}">
+            </div>
+            {{ subject.subject }}
+          </h2>
           <ul>
               {% for member in subject.contents %}
               <li class="item">
-                 <div class="content-header">
-  {{ member.title | markdownify }}
-  {% if member.date %}
-    <span class="content-date">
-      <img src="{{ '/assets/img/calendar.webp' | prepend: site.baseurl}}" alt="date of disappointment">
-      {{ member.date }}
-    </span>
-  {% endif %}
-</div>
-                 {% for item in member %}
-  {% if item[0] != "title" and item[0] != "date" %}
-    {% if item[1].first %}
-      <ul>
-        {% for subitem in item[1] %}
-        <li class="subitem">
-          {{ subitem | markdownify }}
-        </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      {% if subject.subject == "album" and item[0] == "text" %}
-        {{ item[1] }}
-      {% else %}
-        {{ item[1] | markdownify }}
-      {% endif %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
+                  <div class="content-header">
+                    {{ member.title | markdownify }}
+                    {% if member.date %}
+                      <span class="content-date">
+                        <img src="{{ '/assets/img/calendar.webp' | prepend: site.baseurl}}" alt="date">
+                        {{ member.date }}
+                      </span>
+                    {% endif %}
+                  </div>
+                  {% for item in member %}
+                    {% if item[0] != "title" and item[0] != "date" %}
+                      {% if item[1].first %}
+                        <ul>
+                          {% for subitem in item[1] %}
+                          <li class="subitem">
+                            {{ subitem | markdownify }}
+                          </li>
+                          {% endfor %}
+                        </ul>
+                      {% else %}
+                        {{ item[1] | markdownify }}
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
               </li>
               {% endfor %}
           </ul>
@@ -197,38 +138,11 @@
       {% endfor %}
       </ul>
   </div>
-
   <div id="footer">
     <span>
-      copyright © 2025 - made with regret<br>by scrotie eggson
+      Copyright © 2024 | <a href="https://github.com/byanko55">Yankos</a>
     </span>
   </div>
-  <script src="/assets/js/main.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const toggle = document.getElementById('mobile-menu-toggle');
-  const sidebar = document.getElementById('sidebar');
-
-  toggle.addEventListener('click', function() {
-    toggle.classList.toggle('active');
-    sidebar.classList.toggle('open');
-  });
-  
-  sidebar.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      toggle.classList.remove('active');
-      sidebar.classList.remove('open');
-    });
-  });
-
-  window.addEventListener('resize', function() {
-    if(window.innerWidth > 767) {
-      toggle.classList.remove('active');
-      sidebar.classList.remove('open');
-    }
-  });
-});
-</script>
 </body>
 <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
 </html>
