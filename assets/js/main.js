@@ -121,4 +121,14 @@ document.addEventListener('DOMContentLoaded', function(){
       document.head.appendChild(styleSheet);
       bannerContainer.style.animation = `scroll-banner ${Math.max(12, images.length * 1.2)}s linear infinite`;
     }, 250);
+
+    const backToTopBtn = document.createElement('button');
+    backToTopBtn.id = 'back-to-top';
+    backToTopBtn.textContent = '↑';
+    backToTopBtn.setAttribute('aria-label', 'Back to top');
+    document.body.appendChild(backToTopBtn);
+
+    backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
 });
