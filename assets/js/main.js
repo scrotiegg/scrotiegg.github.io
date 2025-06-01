@@ -123,15 +123,6 @@ document.addEventListener('DOMContentLoaded', function(){
     }, 250);
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const toggle = document.getElementById('mobile-menu-toggle');
-  const sidebar = document.getElementById('sidebar');
-
-  toggle.addEventListener('click', function() {
-    toggle.classList.toggle('active');
-    sidebar.classList.toggle('open');
-  });
-
 document.addEventListener("DOMContentLoaded", function () {
   const players = document.querySelectorAll(".album-player");
 
