@@ -1,1 +1,48 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>scrotiegg</title>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    #back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #724d33;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      font-size: 24px;
+      cursor: pointer;
+      opacity: 0.75;
+      transition: opacity 0.3s, transform 0.3s;
+      z-index: 2000;
+    }
+    #back-to-top:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <button id="mobile-menu-toggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div id="sidebar"><ul class="toc-box"></ul></div>
+  <div id="about"><div class="name-zone"><h1>scrotiegg</h1><h2>no brains, just balls</h2></div></div>
+  <div id="contents"><div id="banner-carousel"></div></div>
+  <div id="footer"><span>copyright © 2025 – made with regret<br>by scrotie eggson</span></div>
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
