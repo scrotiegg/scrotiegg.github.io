@@ -374,3 +374,12 @@ b, strong { font-weight: 700 !important; }
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); } /* será ajustado via JS para looping perfeito */
 }
+
+/* Limita o site a 800px no desktop */
+@media (min-width: 801px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+}
