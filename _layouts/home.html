@@ -200,38 +200,38 @@
       </ul>
   </div>
 
-  <div id="footer">
+    <div id="footer">
     <span>
       copyright © 2025 - made with regret<br>by scrotie eggson
     </span>
   </div>
-  <script src="/assets/js/main.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const toggle = document.getElementById('mobile-menu-toggle');
-  const sidebar = document.getElementById('sidebar');
 
-  toggle.addEventListener('click', function() {
-    toggle.classList.toggle('active');
-    sidebar.classList.toggle('open');
-  });
-  
-  sidebar.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      toggle.classList.remove('active');
-      sidebar.classList.remove('open');
+  <!-- Scripts -->
+  <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggle = document.getElementById('mobile-menu-toggle');
+      const sidebar = document.getElementById('sidebar');
+
+      toggle.addEventListener('click', function() {
+        toggle.classList.toggle('active');
+        sidebar.classList.toggle('open');
+      });
+
+      sidebar.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          toggle.classList.remove('active');
+          sidebar.classList.remove('open');
+        });
+      });
+
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 767) {
+          toggle.classList.remove('active');
+          sidebar.classList.remove('open');
+        }
+      });
     });
-  });
-
-  window.addEventListener('resize', function() {
-    if(window.innerWidth > 767) {
-      toggle.classList.remove('active');
-      sidebar.classList.remove('open');
-    }
-  });
-});
-</script>
-</div>
+  </script>
 </body>
-<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
 </html>
