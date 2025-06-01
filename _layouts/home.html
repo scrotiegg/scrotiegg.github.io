@@ -184,7 +184,7 @@
       </ul>
     {% else %}
       {% if subject.subject == "album" and item[0] == "text" %}
-        {{ item[1] | markdownify }}
+        {{ item[1] }}
       {% else %}
         {{ item[1] | markdownify }}
       {% endif %}
