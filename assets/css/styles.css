@@ -225,7 +225,7 @@ a { text-decoration: none; }
 .name-zone h2 { color: var(--theme4-dark); }
 
 #contents {
-    width: 95%;
+    width: 85%;
     margin-left: 7.5%;
     text-align: left;
 }
