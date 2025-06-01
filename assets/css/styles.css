@@ -225,8 +225,8 @@ a { text-decoration: none; }
 .name-zone h2 { color: var(--theme4-dark); }
 
 #contents {
-    width: 85%;
-    margin-left: 7.5%;
+    width: 94%;
+    margin-left: 3%;
     text-align: left;
 }
 #contents ul { margin-bottom: 3rem; }
