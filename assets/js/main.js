@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const iframe = document.createElement("iframe");
       iframe.src = src;
       iframe.width = "100%";
-      iframe.height = "480";
+      iframe.height = "auto";
       iframe.frameBorder = "0";
       iframe.allow = "encrypted-media";
       iframe.style.borderRadius = "16px";
