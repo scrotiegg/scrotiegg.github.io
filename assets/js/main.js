@@ -123,3 +123,19 @@ document.addEventListener('DOMContentLoaded', function(){
     }, 250);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const players = document.querySelectorAll(".album-player");
+
+  players.forEach(function (el) {
+    const src = el.getAttribute("data-src");
+    if (src) {
+      const iframe = document.createElement("iframe");
+      iframe.src = src;
+      iframe.width = "100%";
+      iframe.height = "480";
+      iframe.frameBorder = "0";
+      iframe.allow = "encrypted-media";
+      iframe.style.borderRadius = "16px";
+      el.appendChild(iframe);
+    }
+  });
