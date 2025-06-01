@@ -376,9 +376,9 @@ b, strong { font-weight: 700 !important; }
 }
 
 /* Limita o site a 800px no desktop */
-@media (min-width: 961px) {
+@media (min-width: 601px) {
   .container {
-    max-width: 960px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 1rem;
   }
