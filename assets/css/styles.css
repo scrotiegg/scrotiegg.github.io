@@ -382,6 +382,11 @@ b, strong { font-weight: 700 !important; }
     margin: 0 auto;
     padding: 0 1rem;
   }
+  .about {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
 }
 
 .language-dropdown {
