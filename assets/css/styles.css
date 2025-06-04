@@ -385,12 +385,10 @@ b, strong { font-weight: 700 !important; }
 }
 
 .language-dropdown {
-  position: absolute;
-  top: 18px;
-  left: 18px;
+  position: relative;
   font-family: monospace;
   font-size: 0.8rem;
-  z-index: 2000;
+  z-index: 500;
 }
 
 .language-dropdown button {
@@ -431,4 +429,15 @@ b, strong { font-weight: 700 !important; }
 .language-dropdown .dropdown-menu a:hover {
   background: #222;
   color: white;
+}
+
+.top-bar {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 16px 1rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2100; /* acima do conteúdo, abaixo do sidebar */
 }
