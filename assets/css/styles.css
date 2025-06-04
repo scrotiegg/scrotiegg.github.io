@@ -41,7 +41,7 @@ a { text-decoration: none; }
    MENU HAMBÚRGUER GLOBAL
    ====================== */
 #mobile-menu-toggle {
-    display: flex !important; /* garantir que apareça */
+    display: flex;
     z-index: 2001;
     width: 28px;
     height: 28px;
@@ -72,7 +72,7 @@ a { text-decoration: none; }
    ====================== */
 #sidebar {
     display: none;
-    position: relative;
+    position: fixed;
     top: 0;
     right: 0;
     background: var(--theme3-medium, #C19A6B);
@@ -372,7 +372,7 @@ b, strong { font-weight: 700 !important; }
   100% { transform: translateX(-50%); } /* será ajustado via JS para looping perfeito */
 }
 
-/* Limita o site a 800px no desktop */
+/* Limita o site a 550px no desktop */
 @media (min-width: 551px) {
   .container {
     max-width: 550px;
@@ -393,7 +393,6 @@ b, strong { font-weight: 700 !important; }
   border: none;
   color: var(--font-dark); /* mesmo tom usado no site */
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
   font-size: 1rem; /* tamanho padrão do corpo */
   text-transform: none; /* remove o lowercase forçado */
   font-weight: 500;
