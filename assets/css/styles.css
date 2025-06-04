@@ -137,7 +137,7 @@ a { text-decoration: none; }
 .profile-zone {
     width: 100%;
     position: relative;
-    margin: 3rem auto;
+    margin: 1rem auto;
     background-color: var(--theme4-medium);
 }
 .profile-zone:before {
