@@ -1,7 +1,7 @@
 subject: faq
 listing-order: 7
 contents:
-  - title: "frequently avoided questions"
+  - title: "frequently<br>avoided questions"
     text: |
       **q: is scrotiegg safe?**  
       a: no.
