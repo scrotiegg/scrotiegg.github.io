@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-{% assign meta = "" | split: "" %}
-{% for yml_file in site.data %}
-  {% assign meta = meta | push:yml_file[1] %}
-{% endfor %}
-{% assign meta = meta | sort: 'listing-order' %}
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +13,12 @@
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
   <body>
+    {% assign meta = "" | split: "" %}
+    {% for yml_file in site.data %}
+    {% assign meta = meta | push:yml_file[1] %}
+    {% endfor %}
+    {% assign meta = meta | sort: 'listing-order' %}
+
 <div class="top-bar">
   <div class="language-dropdown">
     <button>languages</button>
