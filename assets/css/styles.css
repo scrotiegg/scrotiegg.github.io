@@ -42,9 +42,6 @@ a { text-decoration: none; }
    ====================== */
 #mobile-menu-toggle {
     display: flex !important; /* garantir que apareça */
-    position: fixed;
-    top: 10px;
-    right: 10px;
     z-index: 2001;
     width: 28px;
     height: 28px;
