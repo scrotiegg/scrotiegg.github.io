@@ -382,11 +382,6 @@ b, strong { font-weight: 700 !important; }
     margin: 0 auto;
     padding: 0 1rem;
   }
-  .language-dropdown {
-    max-width: 550px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
 }
 
 .language-dropdown {
@@ -395,7 +390,7 @@ b, strong { font-weight: 700 !important; }
   left: 18px;
   font-family: monospace;
   font-size: 0.8rem;
-  z-index: 500;
+  z-index: 2000;
 }
 
 .language-dropdown button {
