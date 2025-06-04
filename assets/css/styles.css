@@ -380,17 +380,21 @@ b, strong { font-weight: 700 !important; }
 
 .language-dropdown {
   position: relative;
-  font-family: monospace;
-  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   z-index: 500;
 }
 
 .language-dropdown button {
   background: transparent;
   border: none;
-  color: #888;
+  color: var(--font-dark); /* mesmo tom usado no site */
   cursor: pointer;
-  text-transform: lowercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem; /* tamanho padrão do corpo */
+  text-transform: none; /* remove o lowercase forçado */
+  font-weight: 500;
+  padding: 0;
 }
 
 .language-dropdown button:hover {
