@@ -42,6 +42,8 @@ a { text-decoration: none; }
    ====================== */
 #mobile-menu-toggle {
   position: fixed;
+  top: 16px;
+  right: calc(50% - 275px + 16px);
   display: flex;
   flex-direction: column;
   justify-content: center;
