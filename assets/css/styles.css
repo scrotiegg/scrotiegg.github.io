@@ -42,7 +42,7 @@ a { text-decoration: none; }
    ====================== */
 #mobile-menu-toggle {
   position: fixed;
-  top: 16px;
+  top: 14px;
   left: 50%;
   transform: translateX(225px); /* 275px (metade de 550) - 50px de margem direita */
   display: flex;
@@ -388,7 +388,7 @@ b, strong { font-weight: 700 !important; }
 @media (max-width: 550px) {
   #mobile-menu-toggle {
     left: auto;
-    right: 16px;
+    right: 14px;
     transform: none;
   }
 }
@@ -446,7 +446,7 @@ b, strong { font-weight: 700 !important; }
 .top-bar {
   max-width: 550px;
   margin: 0 auto;
-  padding: 8px 1rem 0 1rem;
+  padding: 12px 1rem 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
