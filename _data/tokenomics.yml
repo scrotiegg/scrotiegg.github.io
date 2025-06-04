@@ -1,12 +1,13 @@
 subject: tokenomics
 listing-order: 4
 contents:
-  - title: "math that doesn’t<br>add up"
+  - title: math that doesn’t  
+      add up
     text: |
       **name:** scrotiegg  
       **symbol:** scrotiegg  
       **supply:** 1,000,000,000  
       **utility:** who needs it?  
-      **liquidity:** like your willpower – minimal.  
+      **liquidity:** like your willpower — minimal.  
       **distribution:** mostly random, definitely unfair.  
       **contract:** to be regretted later.
