@@ -42,9 +42,6 @@ a { text-decoration: none; }
    ====================== */
 #mobile-menu-toggle {
   position: fixed;
-  top: 16px;
-  left: 50%;
-  transform: translateX(225px); /* 550px / 2 = 275px → margem direita de ~50px */
   display: flex;
   flex-direction: column;
   justify-content: center;
