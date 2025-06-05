@@ -62,7 +62,7 @@ a { text-decoration: none; }
   display: block;
   width: 20px;
   height: 3px;
-  margin: 14px 0;
+  margin: 1px 0;
   background: var(--theme3-dark, #6F4E37);
   border-radius: 2px;
   transition: 0.3s ease;
