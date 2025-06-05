@@ -199,7 +199,7 @@
         {% endfor %}
       </ul>
     {% else %}
-      {% if subject.subject == "album" and item[0] == "text" %}
+      {% if subject.subject == "music" and item[0] == "text" %}
         {{ item[1] | markdownify }}
       {% else %}
         {{ item[1] | markdownify }}
