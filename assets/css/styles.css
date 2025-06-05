@@ -83,14 +83,14 @@ a { text-decoration: none; }
 #sidebar {
     display: none;
     position: fixed;
-    top: 12px;
-    right: 12px;
+    top: 9px;
+    right: 9px;
     background: var(--theme3-medium, #C19A6B);
     width: 54vw;
-    max-width: 200px;
+    max-width: 180px;
     height: 100vh;
     z-index: 2000;
-    padding-top: 72px;
+    padding-top: 40px;
     box-shadow: -3px 0 16px #0003;
     transition: opacity .3s, transform .25s cubic-bezier(.55,.16,.35,.87);
     transform: translateX(100%);
