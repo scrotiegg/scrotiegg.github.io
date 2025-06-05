@@ -453,3 +453,7 @@ b, strong { font-weight: 700 !important; }
   position: relative;
   z-index: 2100; /* acima do conteúdo, abaixo do sidebar */
 }
+
+#scrotiegg-subtitle {
+  transition: opacity 0.3s ease;
+}
