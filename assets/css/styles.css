@@ -200,7 +200,7 @@ a { text-decoration: none; }
 }
 .personal-info a:hover img {
     width: 28px;
-    filter: brightness(0) saturate(100%) invert(77%) sepia(47%) saturate(1006%) hue-rotate(358deg) brightness(104%) contrast(105%);
+    filter: brightness(0) saturate(100%) invert(48%) sepia(20%) saturate(600%) hue-rotate(90deg) brightness(90%) contrast(85%);
 }
 .personal-info li { height: 40px; }
 .personal-info li:nth-child(n+1):nth-child(-n+5) { text-align: right; }
