@@ -249,5 +249,32 @@
       });
     });
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const subtitles = [
+      "no brains, just balls",
+      "born to lose",
+      "fail with style",
+      "100% risk, 0% plan",
+      "hard shell, soft logic",
+      "dumb by design",
+      "you made it. unfortunately.",
+      "egg on the outside, empty on the inside"
+    ];
+
+    const subtitleElement = document.getElementById("scrotiegg-subtitle");
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % subtitles.length;
+      subtitleElement.style.opacity = 0;
+
+      setTimeout(() => {
+        subtitleElement.textContent = subtitles[index];
+        subtitleElement.style.opacity = 1;
+      }, 300);
+    }, 4000); // troca a cada 4 segundos
+  });
+</script>
 </body>
 </html>
