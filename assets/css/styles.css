@@ -77,8 +77,8 @@ a { text-decoration: none; }
 #sidebar {
     display: none;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 12px;
+    right: 12px;
     background: var(--theme3-medium, #C19A6B);
     width: 54vw;
     max-width: 300px;
