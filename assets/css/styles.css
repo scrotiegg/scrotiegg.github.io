@@ -69,13 +69,13 @@ a { text-decoration: none; }
   transform-origin: center; /* novo */
 }
 #mobile-menu-toggle.active span:nth-child(1) {
-  transform: rotate(-180deg);
+  transform: rotate(-225deg);
 }
 #mobile-menu-toggle.active span:nth-child(2) {
-  transform: rotate(-90deg);
+  transform: rotate(-225deg);
 }
 #mobile-menu-toggle.active span:nth-child(3) {
-  transform: rotate(-180deg);
+  transform: rotate(-225deg);
 }
 /* ======================
    SIDEBAR MENU LATERAL 
