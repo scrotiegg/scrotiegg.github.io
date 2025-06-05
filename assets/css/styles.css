@@ -59,10 +59,10 @@ a { text-decoration: none; }
   z-index: 2001;
 }
 #mobile-menu-toggle span {
-  display: block;
+  display: flex;
   width: 20px;
   height: 3px;
-  margin: 1px 0;
+  margin: 2px 0;
   background: var(--theme3-dark, #6F4E37);
   border-radius: 2px;
   transition: 0.3s ease;
