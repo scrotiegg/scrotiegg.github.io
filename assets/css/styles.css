@@ -69,13 +69,13 @@ a { text-decoration: none; }
   transform-origin: center; /* novo */
 }
 #mobile-menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg);
+  transform: rotate(-180deg);
 }
 #mobile-menu-toggle.active span:nth-child(2) {
   transform: rotate(-90deg);
 }
 #mobile-menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg);
+  transform: rotate(-180deg);
 }
 /* ======================
    SIDEBAR MENU LATERAL 
@@ -87,7 +87,7 @@ a { text-decoration: none; }
     right: 12px;
     background: var(--theme3-medium, #C19A6B);
     width: 54vw;
-    max-width: 300px;
+    max-width: 200px;
     height: 100vh;
     z-index: 2000;
     padding-top: 72px;
