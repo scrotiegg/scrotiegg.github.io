@@ -13,7 +13,7 @@ contents:
       out now on no major platforms.  
       if you thought rock bottom was low, wait till you hear this album.
 
-      <div class='album-player' data-src='https://audius.co/embed/track/4grN8p4?flavor=tiny'></div><br>
+      <div class='album-player' data-src='https://audius.co/embed/track/4grN8p4?flavor=tiny width="100%" height="24" allowTransparency="true" allow="encrypted-media" style="border: none;"'></div><br>
       <div class='album-player' data-src='https://audius.co/embed/track/WaxpOWj?flavor=tiny'></div><br>
       <div class='album-player' data-src='https://audius.co/embed/track/0E19lom?flavor=tiny'></div><br>
       <div class='album-player' data-src='https://audius.co/embed/track/aByqoYQ?flavor=tiny'></div><br>
@@ -26,3 +26,5 @@ contents:
       <div class='album-player' data-src='https://audius.co/embed/track/lJG5MMN?flavor=tiny'></div><br>
       <div class='album-player' data-src='https://audius.co/embed/track/dWlgjr5?flavor=tiny'></div><br>
       <div class='album-player' data-src='https://audius.co/embed/track/lJwkoAZ?flavor=tiny'></div><br>
+
+      <iframe src=https://audius.co/embed/track/4grN8p4?flavor=tiny width="100%" height="24" allowTransparency="true" allow="encrypted-media" style="border: none;"></iframe>
