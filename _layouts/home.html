@@ -139,7 +139,7 @@
   </li>
   {% endif %}
 
-  <!-- Snapchat -->
+  <!-- Spotify -->
   {% if site.spotify_username %}
     <li>
       <a aria-label="Spotify" href="https://spotify.com/user/{{ site.spotify_username }}">
@@ -169,7 +169,7 @@
       {%- when "origin" -%}origin
       {%- when "tokenomics" -%}tokenomics
       {%- when "roadmap" -%}roadmap
-      {%- when "album" -%}album
+      {%- when "music" -%}music
       {%- when "nft" -%}nft
       {%- when "faq" -%}faq
       {%- when "disclaimer" -%}disclaimer
@@ -254,12 +254,8 @@
     const subtitles = [
       "no brains, just balls",
       "born to lose",
-      "fail with style",
-      "100% risk, 0% plan",
-      "hard shell, soft logic",
-      "dumb by design",
-      "you made it. unfortunately.",
-      "egg on the outside, empty on the inside"
+      "feel the shame",
+      "dumb by design"
     ];
 
     const subtitleElement = document.getElementById("scrotiegg-subtitle");
@@ -273,7 +269,7 @@
         subtitleElement.textContent = subtitles[index];
         subtitleElement.style.opacity = 1;
       }, 300);
-    }, 4000); // troca a cada 4 segundos
+    }, 5000); // troca a cada 4 segundos
   });
 </script>
 </body>
