@@ -65,17 +65,17 @@ a { text-decoration: none; }
   margin: 2px 0;
   background: var(--theme3-dark, #6F4E37);
   border-radius: 2px;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
   transform-origin: center; /* novo */
 }
 #mobile-menu-toggle.active span:nth-child(1) {
-  transform: rotate(-225deg);
+  transform: rotate(-315deg);
 }
 #mobile-menu-toggle.active span:nth-child(2) {
-  transform: rotate(-225deg);
+  transform: rotate(-315deg);
 }
 #mobile-menu-toggle.active span:nth-child(3) {
-  transform: rotate(-225deg);
+  transform: rotate(-315deg);
 }
 /* ======================
    SIDEBAR MENU LATERAL 
