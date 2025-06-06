@@ -463,3 +463,11 @@ b, strong { font-weight: 700 !important; }
 #scrotiegg-subtitle {
   transition: opacity 0.3s ease;
 }
+
+#language-button {
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+#language-button:hover {
+  transform: scale(1.1);
+  color: white;
+}
