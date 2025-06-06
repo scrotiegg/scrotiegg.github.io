@@ -453,14 +453,13 @@ b, strong { font-weight: 700 !important; }
   transition: opacity 0.3s ease, transform 0.3s ease;
   visibility: hidden;
   pointer-events: none;
-
   position: absolute;
   top: 28px;
-  left: 50%;
+  left: 0;
+  width: 240px;
   transform-origin: top center;
   background: var(--theme3-medium);
   border-radius: 36px;
-  width: 180px;
   box-shadow: -3px 0 16px #0003;
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
