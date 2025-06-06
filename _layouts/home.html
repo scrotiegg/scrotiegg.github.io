@@ -21,7 +21,7 @@
 
 <div class="top-bar">
   <div class="language-dropdown">
-    <button>languages</button>
+    <button id="language-button">languages</button>
     <div class="dropdown-menu">
       <a href="home.html">english</a>
       <a href="home-br.html">português</a>
@@ -270,6 +270,38 @@
         subtitleElement.style.opacity = 1;
       }, 300);
     }, 5000); // troca a cada 4 segundos
+  });
+</script>
+<script>
+  const button = document.getElementById("language-button");
+  const words = ["scrotish", "languess", "loserlangs", "langwtf"];
+  let active = false;
+
+  button.addEventListener("click", () => {
+    if (active) return; // Evita múltiplos cliques durante a animação
+    active = true;
+
+    const original = "languages";
+    const target = words[Math.floor(Math.random() * words.length)];
+
+    let scramble = original.split('');
+    let step = 0;
+    const maxSteps = 10;
+
+    const interval = setInterval(() => {
+      scramble = scramble.map(() => String.fromCharCode(97 + Math.floor(Math.random() * 26)));
+      button.textContent = scramble.join('');
+      step++;
+
+      if (step === maxSteps) {
+        clearInterval(interval);
+        button.textContent = target;
+        setTimeout(() => {
+          button.textContent = original;
+          active = false;
+        }, 2500);
+      }
+    }, 80);
   });
 </script>
 </body>
