@@ -400,7 +400,7 @@ b, strong { font-weight: 700 !important; }
 }
 
 .language-dropdown {
-  position: fixed;
+  position: relative;
   top: 14px;
   left: 9px;
   z-index: 2100;
