@@ -482,11 +482,15 @@ b, strong { font-weight: 700 !important; }
 }
 
 .language-dropdown .dropdown-menu a {
-  display: block;
-  padding: 0.6rem 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
   color: var(--font-dark);
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  transition: color 0.2s;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
 
 .language-dropdown .dropdown-menu a:hover {
