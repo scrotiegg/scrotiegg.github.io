@@ -414,7 +414,7 @@ b, strong { font-weight: 700 !important; }
   border: none;
   color: var(--theme3-dark);
   font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 400;
   cursor: pointer;
   transition: transform 0.4s ease, color 0.4s ease;
@@ -469,6 +469,8 @@ b, strong { font-weight: 700 !important; }
   text-align: center;
   overflow: hidden;
   z-index: 2100;
+  width: 54vw;
+  height: 100vh;
 }
 .language-dropdown.open .dropdown-menu {
   opacity: 1;
