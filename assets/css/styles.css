@@ -515,3 +515,10 @@ b, strong { font-weight: 700 !important; }
 #scrotiegg-subtitle {
   transition: opacity 0.3s ease;
 }
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .language-dropdown .dropdown-menu {
+    font-size: 1.1rem;
+    max-width: 160px;
+  }
+}
