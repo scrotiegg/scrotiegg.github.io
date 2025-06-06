@@ -456,7 +456,7 @@ b, strong { font-weight: 700 !important; }
   visibility: hidden;
   pointer-events: none;
   position: absolute;
-  top: 14px;
+  top: 28px;
   left: 0px;
   transform-origin: top center;
   background: var(--theme3-medium);
