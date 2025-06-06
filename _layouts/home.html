@@ -285,47 +285,37 @@
     });
 
     // 4. ANIMAÇÃO DE TEXTO NO BOTÃO "LANGUAGES"
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const languageButton = document.getElementById('language-button');
-  const wordList = [
-    "languages",      // palavra base
-    "languish",
-    "langlosers",
-    "scrotish",
-    "lingofail",
-    "loserlangs",
-    "tonguewreck",
-    "failguages",
-    "eggish",
-    "miscommunication",
-    "mistranslate.me",
-    "langwtf",
-    "egglect",
-    "syntaxerror",
-    "talktrash",
-    "nocommunication",
-    "scrotbabel",
-    "desperanto",
-    "egglish",
-    "lingodump",
-    "babbleon"
-  ];
+    const button = document.getElementById("language-button");
+    const words = ["scrotish", "languess", "loserlangs", "langwtf"];
+    let active = false;
 
-  let wordIndex = 0;
+    button.addEventListener("click", () => {
+      if (active) return;
+      active = true;
 
-  languageButton.addEventListener('click', () => {
-    // Adiciona classe de animação
-    languageButton.classList.add('clicked');
+      const original = "languages";
+      const target = words[Math.floor(Math.random() * words.length)];
 
-    // Alterna palavra após breve atraso da animação
-    setTimeout(() => {
-      wordIndex = (wordIndex + 1) % wordList.length;
-      languageButton.textContent = wordList[wordIndex];
-      languageButton.classList.remove('clicked');
-    }, 400); // tempo em ms antes da troca (sincronizado com a animação)
+      let scramble = original.split('');
+      let step = 0;
+      const maxSteps = 10;
+
+      const interval = setInterval(() => {
+        scramble = scramble.map(() => String.fromCharCode(97 + Math.floor(Math.random() * 26)));
+        button.textContent = scramble.join('');
+        step++;
+
+        if (step === maxSteps) {
+          clearInterval(interval);
+          button.textContent = target;
+          setTimeout(() => {
+            button.textContent = original;
+            active = false;
+          }, 2500);
+        }
+      }, 80);
+    });
   });
-});
-</script>
+</scriptz>
 </body>
 </html>
