@@ -85,7 +85,7 @@ a { text-decoration: none; }
     position: fixed;
     top: 53px;
     left: 50%;
-    transform: translateX(95px); /* 275px (metade de 550px) - 180px (largura do menu) */
+    transform: translateX(45px); /* 275px (metade de 550px) - 180px (largura do menu) */
     background: var(--theme3-medium, #C19A6B);
     max-width: 180px;
     width: 180px;
