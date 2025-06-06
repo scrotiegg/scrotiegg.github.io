@@ -400,7 +400,9 @@ b, strong { font-weight: 700 !important; }
 }
 
 .language-dropdown {
-  position: relative;
+  position: fixed;
+  top: 14px;
+  left: 9px;
   z-index: 2100;
   font-family: 'Poppins', sans-serif;
   overflow: visible;
@@ -456,7 +458,7 @@ b, strong { font-weight: 700 !important; }
   position: absolute;
   top: 28px;
   left: 0;
-  width: 240px;
+  width: 180px;
   transform-origin: top center;
   background: var(--theme3-medium);
   border-radius: 36px;
