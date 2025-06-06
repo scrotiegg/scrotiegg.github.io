@@ -87,8 +87,8 @@ a { text-decoration: none; }
     left: 53%;
     transform: translateX(80px); /* 275px (metade de 550px) - 180px (largura do menu) */
     background: var(--theme3-medium, #C19A6B);
-    max-width: 180px;
-    width: 180px;
+    max-width: 160px;
+    width: 160px;
     z-index: 2000;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -407,7 +407,7 @@ b, strong { font-weight: 700 !important; }
   z-index: 2000;
   font-family: 'Poppins', sans-serif;
   overflow: visible;
-  width: 180px;
+  width: 160px;
 }
 
 #language-button {
@@ -469,8 +469,8 @@ b, strong { font-weight: 700 !important; }
   text-align: center;
   overflow: hidden;
   z-index: 2100;
-  max-width: 180px; /* limita a largura máxima */
-  width: 180px;
+  max-width: 160px; /* limita a largura máxima */
+  width: 160px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
