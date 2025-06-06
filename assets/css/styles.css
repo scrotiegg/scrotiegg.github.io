@@ -84,7 +84,6 @@ a { text-decoration: none; }
     display: none;
     position: fixed;
     top: 53px;
-#sidebar {
     right: 14px;
     transform: none;
     background: var(--theme3-medium, #C19A6B);
