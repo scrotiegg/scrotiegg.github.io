@@ -85,7 +85,7 @@ a { text-decoration: none; }
     position: fixed;
     top: 53px;
     left: 55%;
-    transform: translateX(1px); /* 275px (metade de 550px) - 180px (largura do menu) */
+    transform: translateX(95px); /* 275px (metade de 550px) - 180px (largura do menu) */
     background: var(--theme3-medium, #C19A6B);
     max-width: 180px;
     width: 180px;
@@ -517,7 +517,7 @@ b, strong { font-weight: 700 !important; }
   transition: opacity 0.3s ease;
 }
 
-@media screen and (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 550px) and (orientation: landscape) {
   .language-dropdown .dropdown-menu {
     font-size: 1.1rem;
     max-width: 160px;
