@@ -84,8 +84,9 @@ a { text-decoration: none; }
     display: none;
     position: fixed;
     top: 53px;
-    left: 54%;
-    transform: translateX(95px); /* 275px (metade de 550px) - 180px (largura do menu) */
+#sidebar {
+    right: 14px;
+    transform: none;
     background: var(--theme3-medium, #C19A6B);
     max-width: 160px;
     width: 160px;
