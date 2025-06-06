@@ -303,6 +303,21 @@
       }
     }, 80);
   });
+  
+  document.addEventListener("DOMContentLoaded", function () {
+  const langButton = document.querySelector(".language-dropdown button");
+  const langDropdown = document.querySelector(".language-dropdown");
+
+  langButton.addEventListener("click", function (e) {
+    e.stopPropagation(); // evita conflito com clique fora
+    langDropdown.classList.toggle("open");
+  });
+
+  // Fecha o menu ao clicar fora
+  document.addEventListener("click", function () {
+    langDropdown.classList.remove("open");
+  });
+});
 </script>
 </body>
 </html>
