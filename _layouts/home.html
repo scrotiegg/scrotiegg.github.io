@@ -224,100 +224,95 @@
 
   <!-- Scripts -->
   <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const toggle = document.getElementById('mobile-menu-toggle');
-      const sidebar = document.getElementById('sidebar');
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // 1. SIDEBAR HAMBURGUER
+    const toggle = document.getElementById('mobile-menu-toggle');
+    const sidebar = document.getElementById('sidebar');
 
-      toggle.addEventListener('click', function() {
-        toggle.classList.toggle('active');
-        sidebar.classList.toggle('open');
-      });
+    toggle.addEventListener('click', function () {
+      toggle.classList.toggle('active');
+      sidebar.classList.toggle('open');
+    });
 
-      sidebar.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          toggle.classList.remove('active');
-          sidebar.classList.remove('open');
-        });
-      });
-
-      window.addEventListener('resize', function() {
-        if (window.innerWidth > 767) {
-          toggle.classList.remove('active');
-          sidebar.classList.remove('open');
-        }
+    sidebar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        toggle.classList.remove('active');
+        sidebar.classList.remove('open');
       });
     });
-  </script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 767) {
+        toggle.classList.remove('active');
+        sidebar.classList.remove('open');
+      }
+    });
+
+    // 2. SUBTÍTULOS ROTATIVOS
     const subtitles = [
       "no brains, just balls",
       "born to lose",
       "feel the shame",
       "dumb by design"
     ];
-
     const subtitleElement = document.getElementById("scrotiegg-subtitle");
     let index = 0;
 
     setInterval(() => {
       index = (index + 1) % subtitles.length;
       subtitleElement.style.opacity = 0;
-
       setTimeout(() => {
         subtitleElement.textContent = subtitles[index];
         subtitleElement.style.opacity = 1;
       }, 300);
-    }, 5000); // troca a cada 4 segundos
+    }, 5000);
+
+    // 3. MENU DE IDIOMAS ABRE/FECHA
+    const langButton = document.querySelector(".language-dropdown button");
+    const langDropdown = document.querySelector(".language-dropdown");
+
+    langButton.addEventListener("click", function (e) {
+      e.stopPropagation();
+      langDropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function () {
+      langDropdown.classList.remove("open");
+    });
+
+    // 4. ANIMAÇÃO DE TEXTO NO BOTÃO "LANGUAGES"
+    const button = document.getElementById("language-button");
+    const words = ["scrotish", "languess", "loserlangs", "langwtf"];
+    let active = false;
+
+    button.addEventListener("click", () => {
+      if (active) return;
+      active = true;
+
+      const original = "languages";
+      const target = words[Math.floor(Math.random() * words.length)];
+
+      let scramble = original.split('');
+      let step = 0;
+      const maxSteps = 10;
+
+      const interval = setInterval(() => {
+        scramble = scramble.map(() => String.fromCharCode(97 + Math.floor(Math.random() * 26)));
+        button.textContent = scramble.join('');
+        step++;
+
+        if (step === maxSteps) {
+          clearInterval(interval);
+          button.textContent = target;
+          setTimeout(() => {
+            button.textContent = original;
+            active = false;
+          }, 2500);
+        }
+      }, 80);
+    });
   });
-</script>
-<script>
-  const button = document.getElementById("language-button");
-  const words = ["scrotish", "languess", "loserlangs", "langwtf"];
-  let active = false;
-
-  button.addEventListener("click", () => {
-    if (active) return; // Evita múltiplos cliques durante a animação
-    active = true;
-
-    const original = "languages";
-    const target = words[Math.floor(Math.random() * words.length)];
-
-    let scramble = original.split('');
-    let step = 0;
-    const maxSteps = 10;
-
-    const interval = setInterval(() => {
-      scramble = scramble.map(() => String.fromCharCode(97 + Math.floor(Math.random() * 26)));
-      button.textContent = scramble.join('');
-      step++;
-
-      if (step === maxSteps) {
-        clearInterval(interval);
-        button.textContent = target;
-        setTimeout(() => {
-          button.textContent = original;
-          active = false;
-        }, 2500);
-      }
-    }, 80);
-  });
-  
-  document.addEventListener("DOMContentLoaded", function () {
-  const langButton = document.querySelector(".language-dropdown button");
-  const langDropdown = document.querySelector(".language-dropdown");
-
-  langButton.addEventListener("click", function (e) {
-    e.stopPropagation(); // evita conflito com clique fora
-    langDropdown.classList.toggle("open");
-  });
-
-  // Fecha o menu ao clicar fora
-  document.addEventListener("click", function () {
-    langDropdown.classList.remove("open");
-  });
-});
 </script>
 </body>
 </html>
