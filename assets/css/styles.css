@@ -523,3 +523,9 @@ b, strong { font-weight: 700 !important; }
     max-width: 160px;
   }
 }
+
+@media (min-width: 551px) {
+  #sidebar {
+    right: calc((100vw - 550px) / 2 + 14px);
+  }
+}
