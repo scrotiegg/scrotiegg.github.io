@@ -458,7 +458,6 @@ b, strong { font-weight: 700 !important; }
   position: absolute;
   top: 28px;
   left: 0;
-  width: 180px;
   transform-origin: top center;
   background: var(--theme3-medium);
   border-radius: 36px;
@@ -469,8 +468,9 @@ b, strong { font-weight: 700 !important; }
   text-align: center;
   overflow: hidden;
   z-index: 2100;
-  width: 54vw;
   height: 100vh;
+  max-width: 120px; /* limita a largura máxima */
+  width: 100%;
 }
 .language-dropdown.open .dropdown-menu {
   opacity: 1;
