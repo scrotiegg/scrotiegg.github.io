@@ -401,35 +401,61 @@ b, strong { font-weight: 700 !important; }
 
 .language-dropdown {
   position: relative;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
   z-index: 2100;
+  font-family: 'Poppins', sans-serif;
 }
 
-.language-dropdown button {
-  background: transparent;
+#language-button {
+  background: none;
   border: none;
-  color: var(--font-dark);
-  cursor: pointer;
+  color: var(--theme3-dark);
+  font-family: 'Poppins', sans-serif;
   font-size: 1rem;
   font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.4s ease, color 0.4s ease;
   padding: 0;
+}
+
+#language-button:hover {
+  transform: scale(1.1);
+  color: #6F4E37;
+}
+
+#language-button.clicked {
+  animation: morphWord 1s forwards;
+}
+
+@keyframes morphWord {
+  0% {
+    letter-spacing: 0;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    letter-spacing: 3px;
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .language-dropdown .dropdown-menu {
   display: none;
   position: absolute;
-  top: 26px;
-  left: 0;
+  top: 28px;
+  right: 0;
   background: var(--theme3-medium);
   border-radius: 36px;
-  width: 240px;
+  width: 180px;
   box-shadow: -3px 0 16px #0003;
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
   text-align: center;
-  z-index: 2100;
+  overflow: hidden;
 }
 
 .language-dropdown:hover .dropdown-menu {
@@ -438,7 +464,7 @@ b, strong { font-weight: 700 !important; }
 
 .language-dropdown .dropdown-menu a {
   display: block;
-  padding: 0.5rem 0;
+  padding: 0.6rem 0;
   color: var(--font-dark);
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
@@ -462,21 +488,4 @@ b, strong { font-weight: 700 !important; }
 
 #scrotiegg-subtitle {
   transition: opacity 0.3s ease;
-}
-
-#language-button {
-  background: none;
-  border: none;
-  color: var(--theme3-dark); /* mesma cor do hambúrguer */
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: transform 0.4s ease, color 0.4s ease;
-  padding: 0;
-}
-
-#language-button:hover {
-  transform: scale(1.1);
-  color: #6F4E37;
 }
