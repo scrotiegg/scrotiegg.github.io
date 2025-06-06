@@ -468,9 +468,10 @@ b, strong { font-weight: 700 !important; }
   text-align: center;
   overflow: hidden;
   z-index: 2100;
-  max-width: 120px; /* limita a largura máxima */
-  width: 100%;
+  max-width: 180px; /* limita a largura máxima */
+  width: 180px;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 .language-dropdown.open .dropdown-menu {
   opacity: 1;
