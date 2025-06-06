@@ -402,8 +402,8 @@ b, strong { font-weight: 700 !important; }
 .language-dropdown {
   position: relative;
   top: 14px;
-  left: 9px;
-  z-index: 2100;
+  left: 14px;
+  z-index: 2001;
   font-family: 'Poppins', sans-serif;
   overflow: visible;
   width: 120px;
