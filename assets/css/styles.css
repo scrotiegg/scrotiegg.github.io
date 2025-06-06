@@ -52,7 +52,7 @@ a { text-decoration: none; }
   align-items: center;
   width: 28px;
   height: 28px;
-  background: #ffffff;
+  background: none;
   border: none;
   padding: 0;
   cursor: pointer;
