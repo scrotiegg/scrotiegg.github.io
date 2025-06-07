@@ -5,204 +5,214 @@ layout: null
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>404 – not even this page made it</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 – not even this page made it</title>
+    {% seo %}
 
-<div class="top-bar">
-  <div class="language-dropdown">
-    <button>languages</button>
-    <div class="dropdown-menu">
-      <a href="home.html">english</a>
-      <a href="home-br.html">português</a>
-      <a href="home-es.html">español</a>
-      <a href="home-fr.html">français</a>
-      <a href="home-ru.html">русский</a>
-      <a href="home-ko.html">한국어</a>
-      <a href="home-zh.html">中文</a>
-      <a href="home-jp.html">日本語</a>
-    </div>
-  </div>
+    <link rel="icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
 
-  <button id="mobile-menu-toggle" aria-label="Open menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</div>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <div class="language-dropdown">
+          <button id="language-button" aria-haspopup="true" aria-expanded="false">languages</button>
+          <div class="dropdown-menu">
+            <a href="home.html">english</a>
+            <a href="br.html">português</a>
+            <a href="es.html">español</a>
+            <a href="fr.html">français</a>
+            <a href="ru.html">русский</a>
+            <a href="ko.html">한국어</a>
+            <a href="zh.html">中文</a>
+            <a href="jp.html">日本語</a>
+          </div>
+        </div>
 
-<div id="sidebar">
-  <ul class="toc-box">
-    <li><a href="home.html#manifesto">manifesto</a></li>
-    <li><a href="home.html#vision">vision</a></li>
-    <li><a href="home.html#origin">origin</a></li>
-    <li><a href="home.html#tokenomics">tokenomics</a></li>
-    <li><a href="home.html#roadmap">roadmap</a></li>
-    <li><a href="home.html#music">music</a></li>
-    <li><a href="home.html#nft">nft</a></li>
-    <li><a href="home.html#faq">faq</a></li>
-    <li><a href="home.html#disclaimer">disclaimer</a></li>
-  </ul>
-</div>
+        <button id="mobile-menu-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-<div class="container">
-  <div id="about">
-    <div class="profile-zone">
-      <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo">
-      <ul class="personal-info">
-        {% if site.x_username %}
-        <li>
-          <a href="https://x.com/{{ site.x_username }}">
-            <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="where dreams go to die">
-            <div><span>where dreams go to die</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.discord_username %}
-        <li>
-          <a href="https://discord.gg/{{ site.discord_username }}">
-            <img src="{{ '/assets/img/discord.svg' | prepend: site.baseurl }}" alt="absolute chaos">
-            <div><span>absolute chaos</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.instagram_username %}
-        <li>
-          <a href="https://instagram.com/{{ site.instagram_username }}">
-            <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="pictures of failure">
-            <div><span>pictures of failure</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.tiktok_username %}
-        <li>
-          <a href="https://tiktok.com/@{{ site.tiktok_username }}">
-            <img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="viral disasters">
-            <div><span>viral disasters</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.reddit_username %}
-        <li>
-          <a href="https://reddit.com/user/{{ site.reddit_username }}">
-            <img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="meme laboratory">
-            <div><span>meme laboratory</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.youtube_username %}
-        <li>
-          <a href="https://youtube.com/@{{ site.youtube_username }}">
-            <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="useless tutorials">
-            <div><span>tutorials that never work</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.github_username %}
-        <li>
-          <a href="https://github.com/{{ site.github_username }}">
-            <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="bad ideas repository">
-            <div><span>bad ideas repository</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.facebook_username %}
-        <li>
-          <a href="https://facebook.com/{{ site.instagram_username }}">
-            <img src="{{ '/assets/img/facebook-2.svg' | prepend: site.baseurl }}" alt="where your mom invests">
-            <div><span>where your mom invests</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.threads_username %}
-        <li>
-          <a href="https://threads.net/@{{ site.threads_username }}">
-            <img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="no thread of hope">
-            <div><span>no thread of hope</span></div>
-          </a>
-        </li>
-        {% endif %}
-        {% if site.spotify_username %}
-        <li>
-          <a href="https://audius.co/scrotiegg/album/scrotiegg">
-            <img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="sad tunes">
-            <div><span>sad tunes</span></div>
-          </a>
-        </li>
-        {% endif %}
-      </ul>
+        <div id="sidebar">
+          <ul class="toc-box">
+            <li><a href="home.html#manifesto">manifesto</a></li>
+            <li><a href="home.html#vision">vision</a></li>
+            <li><a href="home.html#origin">origin</a></li>
+            <li><a href="home.html#tokenomics">tokenomics</a></li>
+            <li><a href="home.html#roadmap">roadmap</a></li>
+            <li><a href="home.html#music">music</a></li>
+            <li><a href="home.html#nft">nft</a></li>
+            <li><a href="home.html#faq">faq</a></li>
+            <li><a href="home.html#disclaimer">disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="about">
+        <div class="profile-zone">
+          <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo" />
+          <ul class="personal-info">
+            {% if site.x_username %}
+              <li><a href="https://x.com/{{ site.x_username }}"><img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="" /><div><span>where dreams go to die</span></div></a></li>
+            {% endif %}
+            {% if site.discord_username %}
+              <li><a href="https://discord.gg/{{ site.discord_username }}"><img src="{{ '/assets/img/discord.svg' | prepend: site.baseurl }}" alt="" /><div><span>absolute chaos</span></div></a></li>
+            {% endif %}
+            {% if site.instagram_username %}
+              <li><a href="https://instagram.com/{{ site.instagram_username }}"><img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="" /><div><span>pictures of failure</span></div></a></li>
+            {% endif %}
+            {% if site.tiktok_username %}
+              <li><a href="https://tiktok.com/@{{ site.tiktok_username }}"><img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="" /><div><span>viral disasters</span></div></a></li>
+            {% endif %}
+            {% if site.reddit_username %}
+              <li><a href="https://reddit.com/user/{{ site.reddit_username }}"><img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="" /><div><span>meme laboratory</span></div></a></li>
+            {% endif %}
+            {% if site.youtube_username %}
+              <li><a href="https://youtube.com/@{{ site.youtube_username }}"><img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="" /><div><span>tutorials that never work</span></div></a></li>
+            {% endif %}
+            {% if site.github_username %}
+              <li><a href="https://github.com/{{ site.github_username }}"><img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="" /><div><span>bad ideas repository</span></div></a></li>
+            {% endif %}
+            {% if site.facebook_username %}
+              <li><a href="https://facebook.com/{{ site.instagram_username }}"><img src="{{ '/assets/img/facebook-2.svg' | prepend: site.baseurl }}" alt="" /><div><span>where your mom invests</span></div></a></li>
+            {% endif %}
+            {% if site.threads_username %}
+              <li><a href="https://threads.net/@{{ site.threads_username }}"><img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="" /><div><span>no thread of hope</span></div></a></li>
+            {% endif %}
+            {% if site.spotify_username %}
+              <li><a href="https://audius.co/scrotiegg/album/scrotiegg"><img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="" /><div><span>sad tunes</span></div></a></li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <div class="name-zone">
+          <h1>scrotiegg</h1>
+          <h2 id="scrotiegg-subtitle">not found, just lost</h2>
+        </div>
+      </div>
+
+      <div class="container" style="text-align: center; margin-top: 2rem;">
+        <h1 class="main404" style="font-size: 6rem; font-weight: 900; letter-spacing: -4px; color: var(--theme3-dark);">404</h1>
+        <p><strong>not even this page made it</strong></p>
+        <p>some failures aren’t planned<br>this page doesn’t exist<br>maybe it never did<br>maybe it was never meant to</p>
+        <p><a href="home.html" style="text-decoration: underline; color: var(--theme4-dark); font-weight: 600;">go back to where things go wrong on purpose</a></p>
+      </div>
+
+      <div id="footer">
+        <span>copyright © 2025 - made with regret by scrotdev</span>
+      </div>
     </div>
 
-    <div class="name-zone">
-      <h1>scrotiegg</h1>
-      <h2 id="scrotiegg-subtitle">not found, just lost</h2>
-    </div>
-  </div>
+    <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("mobile-menu-toggle");
+        const sidebar = document.getElementById("sidebar");
 
-  <div class="container" style="text-align: center; margin-top: 2rem;">
-    <h1 class="main404" style="font-size: 6rem; font-weight: 900; letter-spacing: -4px; color: var(--theme3-dark);">404</h1>
-    <p><strong>not even this page made it</strong></p>
-    <p>some failures aren’t planned<br>this page doesn’t exist<br>maybe it never did<br>maybe it was never meant to</p>
-    <p><a href="home.html" style="text-decoration: underline; color: var(--theme4-dark); font-weight: 600;">go back to where things go wrong on purpose</a></p>
-  </div>
-</div>
+        toggle.addEventListener("click", function () {
+          toggle.classList.toggle("active");
+          sidebar.classList.toggle("open");
+        });
 
-<div id="footer">
-  <span>
-    copyright © 2025 - made with regret by scrotdev
-  </span>
-</div>
+        sidebar.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            sidebar.classList.remove("open");
+          });
+        });
 
-<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.getElementById('mobile-menu-toggle');
-    const sidebar = document.getElementById('sidebar');
+        window.addEventListener("resize", function () {
+          if (window.innerWidth > 767) {
+            toggle.classList.remove("active");
+            sidebar.classList.remove("open");
+          }
+        });
 
-    toggle.addEventListener('click', function () {
-      toggle.classList.toggle('active');
-      sidebar.classList.toggle('open');
-    });
+        const subtitles = [
+          "not found, just lost",
+          "404 reasons to quit",
+          "you're still here?",
+          "try again. or don’t."
+        ];
+        const subtitleElement = document.getElementById("scrotiegg-subtitle");
+        let index = 0;
+        setInterval(() => {
+          index = (index + 1) % subtitles.length;
+          subtitleElement.style.opacity = 0;
+          setTimeout(() => {
+            subtitleElement.textContent = subtitles[index];
+            subtitleElement.style.opacity = 1;
+          }, 300);
+        }, 5000);
 
-    sidebar.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        toggle.classList.remove('active');
-        sidebar.classList.remove('open');
+        const langButton = document.querySelector(".language-dropdown button");
+        const langDropdown = document.querySelector(".language-dropdown");
+
+        langButton.addEventListener("click", function (e) {
+          e.stopPropagation();
+          langDropdown.classList.toggle("open");
+          langButton.setAttribute("aria-expanded", langDropdown.classList.contains("open"));
+        });
+
+        document.addEventListener("click", function () {
+          langDropdown.classList.remove("open");
+          langButton.setAttribute("aria-expanded", false);
+        });
+
+        const button = document.getElementById("language-button");
+        const words = [
+          "still using Duolingo?",
+          "scrotie no speakee",
+          "translate this, loser",
+          "welcome to illiteracy",
+          "language level: egg",
+          "stop pretending you read",
+          "parlez-vous dumb?",
+          "congrats, you clicked a button",
+          "your teacher gave up",
+          "eggscuse me?",
+          "alphabet soup survivor",
+          "fluent in emoji only",
+          "404: fluency not found"
+        ];
+        let active = false;
+
+        button.addEventListener("click", () => {
+          if (active) return;
+          active = true;
+
+          const original = "languages";
+          const target = words[Math.floor(Math.random() * words.length)];
+
+          let scramble = original.split('');
+          let step = 0;
+          const maxSteps = 10;
+
+          const interval = setInterval(() => {
+            scramble = scramble.map(() =>
+              String.fromCharCode(97 + Math.floor(Math.random() * 26))
+            );
+            button.textContent = scramble.join('');
+            step++;
+
+            if (step === maxSteps) {
+              clearInterval(interval);
+              button.textContent = target;
+              setTimeout(() => {
+                button.textContent = original;
+                active = false;
+              }, 2500);
+            }
+          }, 80);
+        });
       });
-    });
-
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 767) {
-        toggle.classList.remove('active');
-        sidebar.classList.remove('open');
-      }
-    });
-
-    const subtitles = [
-      "not found, just lost",
-      "404 reasons to quit",
-      "you're still here?",
-      "try again. or don’t."
-    ];
-    const subtitleElement = document.getElementById("scrotiegg-subtitle");
-    let index = 0;
-
-    setInterval(() => {
-      index = (index + 1) % subtitles.length;
-      subtitleElement.style.opacity = 0;
-
-      setTimeout(() => {
-        subtitleElement.textContent = subtitles[index];
-        subtitleElement.style.opacity = 1;
-      }, 300);
-    }, 5000);
-  });
-</script>
-</body>
+    </script>
+  </body>
 </html>
