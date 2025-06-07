@@ -142,12 +142,14 @@ a { text-decoration: none; }
 }
 
 .profile-zone {
-  background: var(--theme4-medium);         /* Fundo claro, igual aos outros cards */
+  background: var(--theme4-medium);         /* Cor clara de fundo */
   border-radius: 24px;                     /* Bordas arredondadas */
-  box-shadow: 0 4px 14px #0002;            /* Sombra suave para destacar */
-  padding-bottom: 1rem;                    /* Só aumenta o espaço interno na base */
-  margin: 1rem 0;                       /* Espaçamento vertical externo */
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 14px #0002;            /* Sombra suave */
+  padding: 3.5rem 1.5rem 1.5rem;           /* Espaço interno (extra em cima p/ acomodar a foto) */
+  position: relative;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 100%;
 }
 
 .profile-zone:before {
@@ -169,6 +171,7 @@ a { text-decoration: none; }
     border-radius: 50%;
     border: 4px solid var(--theme3-dark);
 }
+
 .personal-info {
     width: 100%;
     height: 200px;
