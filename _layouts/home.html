@@ -159,6 +159,7 @@
       <div id="contents">
         <ul>
           {% for subject in meta %}
+            <div class="card-section">
             <li class="subject" id="{{ subject.subject }}">
               <h2 class="subject-name">
                 {%- case subject.subject | downcase -%}
@@ -203,6 +204,7 @@
                 {% endfor %}
               </ul>
             </li>
+            </div>
           {% endfor %}
         </ul>
       </div>
