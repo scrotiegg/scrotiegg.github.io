@@ -83,7 +83,7 @@ a { text-decoration: none; }
 #sidebar {
     display: none;
     position: fixed;
-    top: 48px;
+    top: 45px;
     right: 14px;
     transform: none;
     background: var(--theme3-medium, #C19A6B);
