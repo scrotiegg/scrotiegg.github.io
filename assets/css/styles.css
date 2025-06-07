@@ -241,7 +241,7 @@ a { text-decoration: none; }
 #contents li { margin-top: 2rem; line-height: 100%; }
 
 .subject-name {
-    margin: 1.3rem auto 0.4rem auto !important;
+    margin: 0.8rem auto 0.4rem auto !important;
     color: var(--font-dark);
     position: relative;
     margin-left: -16px;
