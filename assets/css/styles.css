@@ -145,9 +145,8 @@ a { text-decoration: none; }
   background: var(--theme4-medium);         /* Fundo claro, igual aos outros cards */
   border-radius: 24px;                     /* Bordas arredondadas */
   box-shadow: 0 4px 14px #0002;            /* Sombra suave para destacar */
-  padding-bottom: 2rem;                    /* Só aumenta o espaço interno na base */
-  margin: 2rem 0;                       /* Espaçamento vertical externo */
-  position: relative;
+  padding-bottom: 1rem;                    /* Só aumenta o espaço interno na base */
+  margin: 1rem 0;                       /* Espaçamento vertical externo */
   transition: transform 0.3s ease;
 }
 
