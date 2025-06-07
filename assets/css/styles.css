@@ -142,11 +142,15 @@ a { text-decoration: none; }
 }
 
 .profile-zone {
-    width: 100%;
-    position: relative;
-    margin: 1rem auto;
-    background-color: var(--theme4-medium);
+  background: var(--theme3-light);         /* Fundo claro, igual aos outros cards */
+  border-radius: 24px;                     /* Bordas arredondadas */
+  box-shadow: 0 4px 14px #0002;            /* Sombra suave para destacar */
+  padding-bottom: 2rem;                    /* Só aumenta o espaço interno na base */
+  margin: 2rem auto;                       /* Espaçamento vertical externo */
+  width: 100%;
+  position: relative;
 }
+
 .profile-zone:before {
     content: "";
     position: absolute;
