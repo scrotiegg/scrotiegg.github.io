@@ -1,343 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>scrotiegg</title>
-  {% seo %}
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>scrotiegg</title>
+    {% seo %}
 
-  <link rel="icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
-  <link rel="shortcut icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-</head>
+    <link rel="icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  </head>
+
   <body>
     {% assign meta = "" | split: "" %}
     {% for yml_file in site.data %}
-    {% assign meta = meta | push:yml_file[1] %}
+      {% assign meta = meta | push: yml_file[1] %}
     {% endfor %}
     {% assign meta = meta | sort: 'listing-order' %}
-   
-    
+
     <div class="container">
-<div class="top-bar">
-  <div class="language-dropdown">
-    <button id="language-button">languages</button>
-    <div class="dropdown-menu">
-      <a href="home.html">english</a>
-      <a href="home-br.html">português</a>
-      <a href="home-es.html">español</a>
-      <a href="home-fr.html">français</a>
-      <a href="home-ru.html">русский</a>
-      <a href="home-ko.html">한국어</a>
-      <a href="home-zh.html">中文</a>
-      <a href="home-jp.html">日本語</a>
-    </div>
-  </div>
+      <div class="top-bar">
+        <div class="language-dropdown">
+          <button id="language-button" aria-haspopup="true" aria-expanded="false">languages</button>
+          <div class="dropdown-menu">
+            <a href="home.html">english</a>
+            <a href="home-br.html">português</a>
+            <a href="home-es.html">español</a>
+            <a href="home-fr.html">français</a>
+            <a href="home-ru.html">русский</a>
+            <a href="home-ko.html">한국어</a>
+            <a href="home-zh.html">中文</a>
+            <a href="home-jp.html">日本語</a>
+          </div>
+        </div>
 
-  <button id="mobile-menu-toggle" aria-label="Open menu">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-  
-<div id="sidebar">
-    <ul class="toc-box"></ul>
-</div>
-</div>
+        <button id="mobile-menu-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-
-  <div id="about">
-    <div class="profile-zone">
-      <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo">
-       <ul class="personal-info">
-  <!-- X -->
-  {% if site.x_username %}
-  <li>
-    <a aria-label="X" href="https://x.com/{{ site.x_username }}">
-      <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="where dreams go to die">
-      <div><span>where dreams go to die</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Discord -->
-  {% if site.discord_username %}
-  <li>
-    <a aria-label="Discord" href="https://discord.gg/{{ site.discord_username }}">
-      <img src="{{ '/assets/img/discord.svg' | prepend: site.baseurl }}" alt="absolute chaos">
-      <div><span>absolute chaos</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Instagram -->
-  {% if site.instagram_username %}
-  <li>
-    <a aria-label="Instagram" href="https://instagram.com/{{ site.instagram_username }}">
-      <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="pictures of failure">
-      <div><span>pictures of failure</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- TikTok -->
-  {% if site.tiktok_username %}
-  <li>
-    <a aria-label="TikTok" href="https://tiktok.com/@{{ site.tiktok_username }}">
-      <img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="viral disasters">
-      <div><span>viral disasters</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Reddit -->
-  {% if site.reddit_username %}
-  <li>
-    <a aria-label="Reddit" href="https://reddit.com/user/{{ site.reddit_username }}">
-      <img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="meme laboratory">
-      <div><span>meme laboratory</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- YouTube -->
-  {% if site.youtube_username %}
-  <li>
-    <a aria-label="YouTube" href="https://youtube.com/@{{ site.youtube_username }}">
-      <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="useless tutorials">
-      <div><span>tutorials that never work</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- GitHub -->
-  {% if site.github_username %}
-  <li>
-    <a aria-label="GitHub" href="https://github.com/{{ site.github_username }}">
-      <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="bad ideas repository">
-      <div><span>bad ideas repository</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Facebook -->
-  {% if site.facebook_username %}
-  <li>
-    <a aria-label="Facebook" href="https://facebook.com/{{ site.instagram_username }}">
-      <img src="{{ '/assets/img/facebook-2.svg' | prepend: site.baseurl }}" alt="where your mom invests">
-      <div><span>where your mom invests</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Threads -->
-  {% if site.threads_username %}
-  <li>
-    <a aria-label="Threads" href="https://threads.net/@{{ site.threads_username }}">
-      <img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="no thread of hope">
-      <div><span>no thread of hope</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-  <!-- Spotify -->
-  {% if site.spotify_username %}
-    <li>
-      <a aria-label="Spotify" href="https://audius.co/scrotiegg/album/scrotiegg">
-        <img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="sad tunes">
-        <div><span>sad tunes</span></div>
-    </a>
-  </li>
-  {% endif %}
-
-      </ul>
-    </div>
-
-      <div class="name-zone">
-      <h1>scrotiegg</h1>
-      <h2 id="scrotiegg-subtitle">no brains, just balls</h2>
-    </div>
-
-  </div>
-  <div id="contents">
-    <ul>
-      {% for subject in meta %}
-        <li class="subject" id="{{ subject.subject }}">
-  <h2 class="subject-name">
-    {%- case subject.subject | downcase -%}
-      {%- when "manifesto" -%}manifesto
-      {%- when "vision" -%}vision
-      {%- when "origin" -%}origin
-      {%- when "tokenomics" -%}tokenomics
-      {%- when "roadmap" -%}roadmap
-      {%- when "music" -%}music
-      {%- when "nft" -%}nft
-      {%- when "faq" -%}faq
-      {%- when "disclaimer" -%}disclaimer
-      {%- else -%}{{ subject.subject }}
-    {%- endcase -%}
-  </h2>
-          <ul>
-              {% for member in subject.contents %}
-              <li class="item">
-                 <div class="content-header">
-  {{ member.title | markdownify }}
-  {% if member.date %}
-    <span class="content-date">
-      <img src="{{ '/assets/img/calendar.webp' | prepend: site.baseurl}}" alt="date of disappointment">
-      {{ member.date }}
-    </span>
-  {% endif %}
-</div>
-                 {% for item in member %}
-  {% if item[0] != "title" and item[0] != "date" %}
-    {% if item[1].first %}
-      <ul>
-        {% for subitem in item[1] %}
-        <li class="subitem">
-          {{ subitem | markdownify }}
-        </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      {% if subject.subject == "music" and item[0] == "text" %}
-        {{ item[1] | markdownify }}
-      {% else %}
-        {{ item[1] | markdownify }}
-      {% endif %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
-              </li>
-              {% endfor %}
+        <div id="sidebar">
+          <ul class="toc-box">
+            <!-- Adicione os itens aqui, se aplicável -->
           </ul>
-        </li>
-      {% endfor %}
-      </ul>
-  </div>
+        </div>
+      </div>
 
-    <div id="footer">
-    <span>
-      copyright © 2025 - made with regret by scrotdev
-    </span>
-  </div>
+      <div id="about">
+        <div class="profile-zone">
+          <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo" />
+          <ul class="personal-info">
+            {% if site.x_username %}
+              <li>
+                <a aria-label="X" href="https://x.com/{{ site.x_username }}">
+                  <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>where dreams go to die</span></div>
+                </a>
+              </li>
+            {% endif %}
 
-  <!-- Scripts -->
-  <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // 1. SIDEBAR HAMBURGUER
-    const toggle = document.getElementById('mobile-menu-toggle');
-    const sidebar = document.getElementById('sidebar');
+            {% if site.discord_username %}
+              <li>
+                <a aria-label="Discord" href="https://discord.gg/{{ site.discord_username }}">
+                  <img src="{{ '/assets/img/discord.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>absolute chaos</span></div>
+                </a>
+              </li>
+            {% endif %}
 
-    toggle.addEventListener('click', function () {
-      toggle.classList.toggle('active');
-      sidebar.classList.toggle('open');
-    });
+            {% if site.instagram_username %}
+              <li>
+                <a aria-label="Instagram" href="https://instagram.com/{{ site.instagram_username }}">
+                  <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>pictures of failure</span></div>
+                </a>
+              </li>
+            {% endif %}
 
-    sidebar.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        toggle.classList.remove('active');
-        sidebar.classList.remove('open');
+            {% if site.tiktok_username %}
+              <li>
+                <a aria-label="TikTok" href="https://tiktok.com/@{{ site.tiktok_username }}">
+                  <img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>viral disasters</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.reddit_username %}
+              <li>
+                <a aria-label="Reddit" href="https://reddit.com/user/{{ site.reddit_username }}">
+                  <img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>meme laboratory</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.youtube_username %}
+              <li>
+                <a aria-label="YouTube" href="https://youtube.com/@{{ site.youtube_username }}">
+                  <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>tutorials that never work</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.github_username %}
+              <li>
+                <a aria-label="GitHub" href="https://github.com/{{ site.github_username }}">
+                  <img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>bad ideas repository</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.facebook_username %}
+              <li>
+                <a aria-label="Facebook" href="https://facebook.com/{{ site.instagram_username }}">
+                  <img src="{{ '/assets/img/facebook-2.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>where your mom invests</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.threads_username %}
+              <li>
+                <a aria-label="Threads" href="https://threads.net/@{{ site.threads_username }}">
+                  <img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>no thread of hope</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.spotify_username %}
+              <li>
+                <a aria-label="Spotify" href="https://audius.co/scrotiegg/album/scrotiegg">
+                  <img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>sad tunes</span></div>
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <div class="name-zone">
+          <h1>scrotiegg</h1>
+          <h2 id="scrotiegg-subtitle">no brains, just balls</h2>
+        </div>
+      </div>
+
+      <div id="contents">
+        <ul>
+          {% for subject in meta %}
+            <li class="subject" id="{{ subject.subject }}">
+              <h2 class="subject-name">
+                {%- case subject.subject | downcase -%}
+                  {%- when "manifesto" -%}manifesto
+                  {%- when "vision" -%}vision
+                  {%- when "origin" -%}origin
+                  {%- when "tokenomics" -%}tokenomics
+                  {%- when "roadmap" -%}roadmap
+                  {%- when "music" -%}music
+                  {%- when "nft" -%}nft
+                  {%- when "faq" -%}faq
+                  {%- when "disclaimer" -%}disclaimer
+                  {%- else -%}{{ subject.subject }}
+                {%- endcase -%}
+              </h2>
+              <ul>
+                {% for member in subject.contents %}
+                  <li class="item">
+                    <div class="content-header">
+                      {{ member.title | markdownify }}
+                      {% if member.date %}
+                        <span class="content-date">
+                          <img src="{{ '/assets/img/calendar.webp' | prepend: site.baseurl }}" alt="date of disappointment" />
+                          {{ member.date }}
+                        </span>
+                      {% endif %}
+                    </div>
+                    {% for item in member %}
+                      {% if item[0] != "title" and item[0] != "date" %}
+                        {% if item[1].first %}
+                          <ul>
+                            {% for subitem in item[1] %}
+                              <li class="subitem">{{ subitem | markdownify }}</li>
+                            {% endfor %}
+                          </ul>
+                        {% else %}
+                          {{ item[1] | markdownify }}
+                        {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div id="footer">
+        <span>copyright © 2025 - made with regret by scrotdev</span>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggle = document.getElementById("mobile-menu-toggle");
+        const sidebar = document.getElementById("sidebar");
+
+        toggle.addEventListener("click", function () {
+          toggle.classList.toggle("active");
+          sidebar.classList.toggle("open");
+        });
+
+        sidebar.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            sidebar.classList.remove("open");
+          });
+        });
+
+        window.addEventListener("resize", function () {
+          if (window.innerWidth > 767) {
+            toggle.classList.remove("active");
+            sidebar.classList.remove("open");
+          }
+        });
+
+        const subtitles = [
+          "no brains, just balls",
+          "born to lose",
+          "feel the shame",
+          "dumb by design"
+        ];
+        const subtitleElement = document.getElementById("scrotiegg-subtitle");
+        let index = 0;
+        setInterval(() => {
+          index = (index + 1) % subtitles.length;
+          subtitleElement.style.opacity = 0;
+          setTimeout(() => {
+            subtitleElement.textContent = subtitles[index];
+            subtitleElement.style.opacity = 1;
+          }, 300);
+        }, 5000);
+
+        const langButton = document.querySelector(".language-dropdown button");
+        const langDropdown = document.querySelector(".language-dropdown");
+
+        langButton.addEventListener("click", function (e) {
+          e.stopPropagation();
+          langDropdown.classList.toggle("open");
+          langButton.setAttribute("aria-expanded", langDropdown.classList.contains("open"));
+        });
+
+        document.addEventListener("click", function () {
+          langDropdown.classList.remove("open");
+          langButton.setAttribute("aria-expanded", false);
+        });
+
+        // Animação sarcástica
+        const button = document.getElementById("language-button");
+        const words = [
+          "still using Duolingo?",
+          "scrotie no speakee",
+          "translate this, loser",
+          "welcome to illiteracy",
+          "language level: egg",
+          "stop pretending you read",
+          "parlez-vous dumb?",
+          "congrats, you clicked a button",
+          "your teacher gave up",
+          "eggscuse me?",
+          "alphabet soup survivor",
+          "fluent in emoji only",
+          "404: fluency not found"
+        ];
+        let active = false;
+
+        button.addEventListener("click", () => {
+          if (active) return;
+          active = true;
+
+          const original = "languages";
+          const target = words[Math.floor(Math.random() * words.length)];
+
+          let scramble = original.split('');
+          let step = 0;
+          const maxSteps = 10;
+
+          const interval = setInterval(() => {
+            scramble = scramble.map(() =>
+              String.fromCharCode(97 + Math.floor(Math.random() * 26))
+            );
+            button.textContent = scramble.join('');
+            step++;
+
+            if (step === maxSteps) {
+              clearInterval(interval);
+              button.textContent = target;
+              setTimeout(() => {
+                button.textContent = original;
+                active = false;
+              }, 2500);
+            }
+          }, 80);
+        });
       });
-    });
-
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 767) {
-        toggle.classList.remove('active');
-        sidebar.classList.remove('open');
-      }
-    });
-
-    // 2. SUBTÍTULOS ROTATIVOS
-    const subtitles = [
-      "no brains, just balls",
-      "born to lose",
-      "feel the shame",
-      "dumb by design"
-    ];
-    const subtitleElement = document.getElementById("scrotiegg-subtitle");
-    let index = 0;
-
-    setInterval(() => {
-      index = (index + 1) % subtitles.length;
-      subtitleElement.style.opacity = 0;
-      setTimeout(() => {
-        subtitleElement.textContent = subtitles[index];
-        subtitleElement.style.opacity = 1;
-      }, 300);
-    }, 5000);
-
-    // 3. MENU DE IDIOMAS ABRE/FECHA
-    const langButton = document.querySelector(".language-dropdown button");
-    const langDropdown = document.querySelector(".language-dropdown");
-
-    langButton.addEventListener("click", function (e) {
-      e.stopPropagation();
-      langDropdown.classList.toggle("open");
-    });
-
-    document.addEventListener("click", function () {
-      langDropdown.classList.remove("open");
-    });
-
-// 4. ANIMAÇÃO DE TEXTO NO BOTÃO "LANGUAGES"
-const button = document.getElementById("language-button");
-const words = [
-  "still using Duolingo?",
-  "scrotie no speakee",
-  "translate this, loser",
-  "welcome to illiteracy",
-  "language level: egg",
-  "stop pretending you read",
-  "parlez-vous dumb?",
-  "congrats, you clicked a button",
-  "your teacher gave up",
-  "eggscuse me?",
-  "alphabet soup survivor",
-  "fluent in emoji only",
-  "no english? lol.",
-  "google translate user.",
-  "language barrier victim.",
-  "still learning abc?",
-  "linguistic failure.",
-  "talk dumb to me.",
-  "404: fluency not found."
-];
-let active = false;
-
-button.addEventListener("click", () => {
-  if (active) return;
-  active = true;
-
-  const original = "languages";
-  const target = words[Math.floor(Math.random() * words.length)];
-
-  let scramble = original.split('');
-  let step = 0;
-  const maxSteps = 10;
-
-  const interval = setInterval(() => {
-    scramble = scramble.map(() =>
-      String.fromCharCode(97 + Math.floor(Math.random() * 26))
-    );
-    button.textContent = scramble.join('');
-    step++;
-
-    if (step === maxSteps) {
-      clearInterval(interval);
-      button.textContent = target;
-      setTimeout(() => {
-        button.textContent = original;
-        active = false;
-      }, 2500);
-    }
-  }, 80);
-});
-});
-</script>
-</body>
+    </script>
+  </body>
 </html>
