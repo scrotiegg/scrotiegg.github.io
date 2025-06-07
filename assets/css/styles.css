@@ -511,6 +511,7 @@ b, strong { font-weight: 700 !important; }
   box-shadow: 0 4px 14px #0002; 
   max-width: 550px;
   margin: 0 auto;
+  margin-top: 1rem;
   padding: 12px 1rem 0 1rem;
   display: flex;
   justify-content: space-between;
