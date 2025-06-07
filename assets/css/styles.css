@@ -506,6 +506,9 @@ b, strong { font-weight: 700 !important; }
 }
 
 .top-bar {
+  background-color: var(--theme3-light);
+  border-radius: 24px;                     /* Bordas arredondadas */
+  box-shadow: 0 4px 14px #0002; 
   max-width: 550px;
   margin: 0 auto;
   padding: 12px 1rem 0 1rem;
