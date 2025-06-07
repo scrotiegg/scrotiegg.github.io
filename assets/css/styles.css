@@ -126,12 +126,15 @@ a { text-decoration: none; }
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
-    color: var(--theme4-dark);
+    color: var(--font-dark);
     transition: color 0.2s;
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }
 
+#sidebar .toc-box a:hover {
+  color: var(--theme4-dark);
+}
 /* ================
    RESTANTE DO SITE
    ================ */
