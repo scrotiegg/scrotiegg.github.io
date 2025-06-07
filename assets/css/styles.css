@@ -331,6 +331,8 @@ img { aspect-ratio: auto; max-width: 320px; }
     padding: 1rem;
     background: var(--theme3-medium);
     font-size: 14px;
+    border-radius: 24px;                     /* Bordas arredondadas */
+    box-shadow: 0 4px 14px #0002; 
 }
 #footer a { color: var(--theme1-dark); font-weight: 600; }
 
