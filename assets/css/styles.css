@@ -238,7 +238,7 @@ a { text-decoration: none; }
     text-align: left;
 }
 #contents ul { margin-bottom: 3rem; }
-#contents li { margin-top: 2rem; line-height: 100%; }
+#contents li { margin-top: 1rem; line-height: 100%; }
 
 .subject-name {
     margin: 0.4rem auto 0.4rem auto !important;
