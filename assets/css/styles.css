@@ -43,7 +43,7 @@ a { text-decoration: none; }
 
   #mobile-menu-toggle {
   position: fixed;
-  top: 13px;
+  top: 14px;
   left: 50%;
   transform: translateX(225px); /* 275px (metade de 550) - 50px de margem direita */
   display: flex;
