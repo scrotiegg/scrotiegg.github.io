@@ -512,7 +512,7 @@ b, strong { font-weight: 700 !important; }
   max-width: 550px;
   margin: 0 auto;
   margin-top: 1rem;
-  padding: 12px 1rem 0 1rem;
+  padding: 0 1rem 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
