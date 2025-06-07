@@ -460,7 +460,7 @@ b, strong { font-weight: 700 !important; }
   visibility: hidden;
   pointer-events: none;
   position: absolute;
-  top: 40px;
+  top: 30px;
   left: 0px;
   transform-origin: top center;
   background: var(--theme3-medium);
