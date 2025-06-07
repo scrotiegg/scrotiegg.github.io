@@ -421,9 +421,11 @@ b, strong { font-weight: 700 !important; }
   font-weight: 400;
   cursor: pointer;
   transition: transform 0.4s ease, color 0.4s ease;
+  padding: 0;
   width: 100%;          /* garante largura igual à da dropdown */
   text-align: left;     /* mantém alinhado à esquerda */
   white-space: nowrap;
+  line-height: 1;
 }
 
 #language-button:hover {
@@ -512,7 +514,7 @@ b, strong { font-weight: 700 !important; }
   margin-top: 1rem;
   padding: 12px 1rem 0 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 2100; /* acima do conteúdo, abaixo do sidebar */
