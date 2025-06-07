@@ -512,7 +512,7 @@ b, strong { font-weight: 700 !important; }
   margin-top: 1rem;
   padding: 12px 1rem 0 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 2100; /* acima do conteúdo, abaixo do sidebar */
