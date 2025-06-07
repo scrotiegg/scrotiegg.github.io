@@ -285,55 +285,53 @@
     });
 
 // 4. ANIMAÇÃO DE TEXTO NO BOTÃO "LANGUAGES"
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.getElementById("language-button");
-  const phrases = [
-    "no english? sad.",
-    "google translate user.",
-    "lost in translation.",
-    "english? overrated.",
-    "language barrier victim.",
-    "still learning abc?",
-    "press here, genius.",
-    "linguistic failure.",
-    "eggplant is not a language.",
-    "english? barely.",
-    "just wing it.",
-    "who needs words?",
-    "talk dumb to me.",
-    "404: fluency not found",
-    "scrotish only pls."
-  ];
-  let active = false;
+const button = document.getElementById("language-button");
+const words = [
+  "no english? sad.",
+  "google translate user.",
+  "lost in translation.",
+  "english? overrated.",
+  "language barrier victim.",
+  "still learning abc?",
+  "press here, genius.",
+  "linguistic failure.",
+  "eggplant is not a language.",
+  "english? barely.",
+  "just wing it.",
+  "who needs words?",
+  "talk dumb to me.",
+  "404: fluency not found",
+  "scrotish only pls."
+];
+let active = false;
 
-  button.addEventListener("click", () => {
-    if (active) return;
-    active = true;
+button.addEventListener("click", () => {
+  if (active) return;
+  active = true;
 
-    const original = "languages";
-    const target = phrases[Math.floor(Math.random() * phrases.length)];
+  const original = "languages";
+  const target = words[Math.floor(Math.random() * words.length)];
 
-    let scramble = original.split('');
-    let step = 0;
-    const maxSteps = 10;
+  let scramble = original.split('');
+  let step = 0;
+  const maxSteps = 10;
 
-    const interval = setInterval(() => {
-      scramble = scramble.map(() =>
-        String.fromCharCode(97 + Math.floor(Math.random() * 26))
-      );
-      button.textContent = scramble.join('');
-      step++;
+  const interval = setInterval(() => {
+    scramble = scramble.map(() =>
+      String.fromCharCode(97 + Math.floor(Math.random() * 26))
+    );
+    button.textContent = scramble.join('');
+    step++;
 
-      if (step === maxSteps) {
-        clearInterval(interval);
-        button.textContent = target;
-        setTimeout(() => {
-          button.textContent = original;
-          active = false;
-        }, 2500);
-      }
-    }, 80);
-  });
+    if (step === maxSteps) {
+      clearInterval(interval);
+      button.textContent = target;
+      setTimeout(() => {
+        button.textContent = original;
+        active = false;
+      }, 2500);
+    }
+  }, 80);
 });
 </script>
 </body>
