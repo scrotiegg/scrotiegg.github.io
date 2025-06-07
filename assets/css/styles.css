@@ -405,7 +405,7 @@ b, strong { font-weight: 700 !important; }
 
 .language-dropdown {
   position: relative;
-  top: 1px;
+  padding: 0.5rem;
   left: 0px;
   z-index: 2000;
   font-family: 'Poppins', sans-serif;
@@ -422,7 +422,6 @@ b, strong { font-weight: 700 !important; }
   font-weight: 400;
   cursor: pointer;
   transition: transform 0.4s ease, color 0.4s ease;
-  padding: 0.5rem;
   width: 100%;          /* garante largura igual à da dropdown */
   text-align: left;     /* mantém alinhado à esquerda */
   white-space: nowrap;
