@@ -187,9 +187,9 @@ a { text-decoration: none; }
 .personal-info span { 
     color: white;
     display: inline-flex;
-    font-size: 0;
+    font-size: 0.65rem;
     vertical-align: middle;
-    clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 0 0 0);
     transition: font-size .6s, clip-path .4s;
     transition-delay: 0s, .45s;
 }
