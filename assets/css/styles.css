@@ -187,10 +187,10 @@ a { text-decoration: none; }
 .personal-info span { 
     color: white;
     display: inline-flex;
-    font-size: 0.5rem;
+    font-size: 0;
     vertical-align: middle;
     clip-path: inset(0 100% 0 0);
-    transition: font-size .6s, clip-path .4s;
+    transition: font-size .3s, clip-path .4s;
     transition-delay: 0s, .45s;
 }
 .personal-info img {
