@@ -192,6 +192,7 @@ a { text-decoration: none; }
     clip-path: inset(0 100% 0 0);
     transition: font-size .3s, clip-path .4s;
     transition-delay: 0s, .45s;
+    transition-property: font-size, clip-path;
 }
 .personal-info img {
     width: 20px;
