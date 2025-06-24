@@ -30,7 +30,10 @@ html, body {
 body { 
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    background: var(--color-background);
+    background-image: url('/assets/images/scrotiegg-pattern.png');
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;
 }
 
 ul, li { list-style: none; padding: 0; }
