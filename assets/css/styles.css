@@ -172,7 +172,7 @@ a { text-decoration: none; }
   position: relative;
   margin: 1rem auto;
   background-color: rgba(255, 248, 228, 0.85);
-  backdrop-filter: blur(2px); /* opcional */
+  backdrop-filter: blur(4px); /* opcional */
   border-radius: 24px;                     /* Bordas arredondadas */
   box-shadow: 0 4px 14px #0002;            /* Sombra suave para destacar */
 }
@@ -495,7 +495,8 @@ b, strong { font-weight: 700 !important; }
   top: 26px;
   left: 0px;
   transform-origin: top center;
-  background: var(--theme3-medium);
+  background-color: rgba(193, 154, 107, 0.85);
+  backdrop-filter: blur(4px); /* opcional para efeito fosco */
   border-radius: 36px;
   box-shadow: -3px 0 16px #0003;
   font-family: 'Poppins', sans-serif;
@@ -542,7 +543,8 @@ b, strong { font-weight: 700 !important; }
 }
 
 .top-bar {
-  background: var(--theme3-light);
+  background-color: rgba(255, 248, 228, 0.85);
+  backdrop-filter: blur(4px); /* opcional */
   border-radius: 24px;                     /* Bordas arredondadas */
   box-shadow: 0 4px 14px #0002; 
   max-width: 550px;
