@@ -22,6 +22,20 @@
     --font-dark: #202424;
 }
 
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/img/back.png');
+  background-repeat: repeat;
+  background-position: top left;
+  z-index: -1;
+  pointer-events: none;
+}
+
 html, body {
     margin: 0;
     padding: 0;
