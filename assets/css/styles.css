@@ -108,7 +108,7 @@ a { text-decoration: none; }
     top: 42px;
     right: 14px;
     transform: none;
-    background-color: rgba(193, 154, 107, 0.90);
+    background-color: rgba(193, 154, 107, 0.85);
     backdrop-filter: blur(4px); /* opcional para efeito fosco */
     max-width: 160px;
     width: 160px;
