@@ -520,8 +520,7 @@ b, strong { font-weight: 700 !important; }
   color: var(--theme4-dark);
 }
 .top-bar {
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(4px);
+  background: transparent !important;
   border-radius: 24px;                     /* Bordas arredondadas */
   box-shadow: 0 4px 14px #0002; 
   max-width: 550px;
