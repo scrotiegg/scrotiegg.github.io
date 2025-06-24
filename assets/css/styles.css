@@ -120,6 +120,7 @@ a { text-decoration: none; }
     pointer-events: none;
     border-radius: 36px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #sidebar.open {
