@@ -519,9 +519,9 @@ b, strong { font-weight: 700 !important; }
   background: var(--theme3-dim);
   color: var(--theme4-dark);
 }
-
 .top-bar {
-  background-color: var(--theme3-light);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(4px);
   border-radius: 24px;                     /* Bordas arredondadas */
   box-shadow: 0 4px 14px #0002; 
   max-width: 550px;
