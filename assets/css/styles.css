@@ -543,8 +543,6 @@ b, strong { font-weight: 700 !important; }
 }
 
 .top-bar {
-  background-color: rgba(255, 248, 228, 0.85);
-  backdrop-filter: blur(4px); /* opcional */
   border-radius: 24px;                     /* Bordas arredondadas */
   box-shadow: 0 4px 14px #0002; 
   max-width: 550px;
