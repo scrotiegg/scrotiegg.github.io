@@ -30,7 +30,7 @@ html, body {
 body { 
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    background-image: url('/assets/images/back.png');
+    background-image: url('/assets/img/back.png');
     background-repeat: repeat;
     background-position: top left;
     background-attachment: fixed;
