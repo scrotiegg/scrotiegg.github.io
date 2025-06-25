@@ -21,6 +21,23 @@
     --font-dark: #202424;
 }
 
+/* ===== PATCH: APLICAÇÃO GLOBAL DA FONTE POPPINS ===== */
+
+/* Define Poppins como fonte padrão do site */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Aplica Poppins aos principais elementos de texto */
+body, p, a, span, li, ul, ol, h1, h2, h3, h4, h5, h6, code, button, input, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Se desejar aplicar de forma ainda mais abrangente: */
+/* *, *::before, *::after {
+  font-family: 'Poppins', sans-serif;
+} */
+
 html::before {
   content: "";
   position: fixed;
