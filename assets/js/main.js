@@ -141,10 +141,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  const buyLink = "https://scrotiegg.fun/buy"; // <- só mudar aqui no futuro
-  document.querySelectorAll(".buy-button-link").forEach(button => {
-    button.href = buyLink;
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  const buyLink = "https://pump.fun/";
+
+  // Seleciona os containers onde o botão deve aparecer
+  const topZone = document.querySelector(".buy-button-zone");
+  const finalZone = document.querySelector(".buy-button-zone.final");
+
+  // Cria o botão com todas as classes e atributos
+  const buyButton = document.createElement("a");
+  buyButton.href = buyLink;
+  buyButton.className = "buy-button"; // classe CSS original
+  buyButton.target = "_blank";
+  buyButton.rel = "noopener";
+  buyButton.innerHTML = "💸 buy $scrotiegg";
+
+  // Clona o botão para colocar em duas zonas
+  const buyButtonClone = buyButton.cloneNode(true);
+
+  // Insere nos lugares certos
+  if (topZone) topZone.appendChild(buyButton);
+  if (finalZone) finalZone.appendChild(buyButtonClone);
 });
+
 
