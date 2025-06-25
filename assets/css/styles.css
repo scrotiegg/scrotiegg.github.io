@@ -250,7 +250,7 @@ a { text-decoration: none; }
 .personal-info li:nth-child(10) { margin-left: 5.25rem; }
 
 .name-zone { margin-top: -2rem;
-    background-color: rgba(255, 248, 228, 0.5);
+    background-color: rgba(255, 248, 228, 0.85);
     backdrop-filter: blur(4px); /* opcional */
     border-radius: 24px;                     /* Bordas arredondadas */
     box-shadow: 0 4px 14px #0002;            /* Sombra suave para destacar */
@@ -629,7 +629,8 @@ b, strong { font-weight: 700 !important; }
 }
 
 .card-section {
-  background: var(--theme3-light);
+  background-color: rgba(255, 248, 228, 0.90);
+  backdrop-filter: blur(4px); /* opcional */
   border-radius: 24px;
   box-shadow: 0 4px 14px #0002;
   padding: 1rem 1.5rem;
