@@ -140,3 +140,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buyLink = "https://scrotiegg.fun/buy"; // <- só mudar aqui no futuro
+  document.querySelectorAll(".buy-button-link").forEach(button => {
+    button.href = buyLink;
+  });
+});
+
