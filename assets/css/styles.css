@@ -45,7 +45,7 @@ html::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('/assets/img/back.png');
+  background-image: url('/assets/img/scrotback.png');
   background-repeat: repeat;
   background-position: top left;
   z-index: -1;
@@ -65,7 +65,7 @@ body::before {
     width: 100vw;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-image: url('/assets/img/back.png');
+    background-image: url('/assets/img/scrotback.png');
     background-repeat: repeat;
     background-position: top left;
     z-index: -1;
