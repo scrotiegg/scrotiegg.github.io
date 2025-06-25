@@ -543,6 +543,7 @@ b, strong { font-weight: 700 !important; }
 }
 
 .top-bar {
+  background: var(--theme3-dark, #6F4E37);
   border-radius: 24px;                     /* Bordas arredondadas */
   box-shadow: 0 4px 14px #0002; 
   max-width: 550px;
