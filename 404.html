@@ -98,7 +98,7 @@ layout: null
         </div>
       </div>
 
-      <div class="container" style="text-align: center; margin-top: 0.5rem;">
+      <div class="card-section">
         <h1 class="main404" style="font-size: 6rem; color: var(--theme3-dark);">404</h1>
         <p><strong>not even this page made it</strong></p>
         <p>some failures aren’t planned<br>this page doesn’t exist<br>maybe it never did<br>maybe it was never meant to</p>
@@ -111,108 +111,6 @@ layout: null
     </div>
 
     <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggle = document.getElementById("mobile-menu-toggle");
-        const sidebar = document.getElementById("sidebar");
-
-        toggle.addEventListener("click", function () {
-          toggle.classList.toggle("active");
-          sidebar.classList.toggle("open");
-        });
-
-        sidebar.querySelectorAll("a").forEach(link => {
-          link.addEventListener("click", () => {
-            toggle.classList.remove("active");
-            sidebar.classList.remove("open");
-          });
-        });
-
-        window.addEventListener("resize", function () {
-          if (window.innerWidth > 767) {
-            toggle.classList.remove("active");
-            sidebar.classList.remove("open");
-          }
-        });
-
-        const subtitles = [
-          "not found, just lost",
-          "404 reasons to quit",
-          "you're still here?",
-          "try again. or don’t."
-        ];
-        const subtitleElement = document.getElementById("scrotiegg-subtitle");
-        let index = 0;
-        setInterval(() => {
-          index = (index + 1) % subtitles.length;
-          subtitleElement.style.opacity = 0;
-          setTimeout(() => {
-            subtitleElement.textContent = subtitles[index];
-            subtitleElement.style.opacity = 1;
-          }, 300);
-        }, 5000);
-
-        const langButton = document.querySelector(".language-dropdown button");
-        const langDropdown = document.querySelector(".language-dropdown");
-
-        langButton.addEventListener("click", function (e) {
-          e.stopPropagation();
-          langDropdown.classList.toggle("open");
-          langButton.setAttribute("aria-expanded", langDropdown.classList.contains("open"));
-        });
-
-        document.addEventListener("click", function () {
-          langDropdown.classList.remove("open");
-          langButton.setAttribute("aria-expanded", false);
-        });
-
-        const button = document.getElementById("language-button");
-        const words = [
-          "still using Duolingo?",
-          "scrotie no speakee",
-          "translate this, loser",
-          "welcome to illiteracy",
-          "language level: egg",
-          "stop pretending you read",
-          "parlez-vous dumb?",
-          "congrats, you clicked a button",
-          "your teacher gave up",
-          "eggscuse me?",
-          "alphabet soup survivor",
-          "fluent in emoji only",
-          "404: fluency not found"
-        ];
-        let active = false;
-
-        button.addEventListener("click", () => {
-          if (active) return;
-          active = true;
-
-          const original = "languages";
-          const target = words[Math.floor(Math.random() * words.length)];
-
-          let scramble = original.split('');
-          let step = 0;
-          const maxSteps = 10;
-
-          const interval = setInterval(() => {
-            scramble = scramble.map(() =>
-              String.fromCharCode(97 + Math.floor(Math.random() * 26))
-            );
-            button.textContent = scramble.join('');
-            step++;
-
-            if (step === maxSteps) {
-              clearInterval(interval);
-              button.textContent = target;
-              setTimeout(() => {
-                button.textContent = original;
-                active = false;
-              }, 2500);
-            }
-          }, 80);
-        });
-      });
-    </script>
+  
   </body>
 </html>
