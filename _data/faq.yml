@@ -1,8 +1,7 @@
 subject: faq
 listing-order: 8
 contents:
-  - title: frequently  
-      avoided questions
+  - title: frequently avoided questions
     text: |
       **Q: is scrotiegg safe?**  
       A: no.
@@ -15,9 +14,6 @@ contents:
 
       **Q: does scrotiegg have any utility?**  
       A: none. not even as a joke.
-
-      **Q: can i trust this project?**  
-      A: only if you've already lost faith in everything else.
 
       **Q: who is the team?**  
       A: anonymous, ashamed, and probably gone by the time you read this.
@@ -33,9 +29,6 @@ contents:
 
       **Q: is scrotiegg audited?**  
       A: only by our own regrets.
-
-      **Q: what if i lose money?**  
-      A: that’s the spirit.
 
       **Q: is this financial advice?**  
       A: do we look like financial advisors?
