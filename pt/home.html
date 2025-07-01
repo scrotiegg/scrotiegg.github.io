@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>scrotiegg</title>
-    <link rel="icon" type="image/png" href="/assets/img/icon.png">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% seo %}
+
+    <link rel="icon" type="image/png" href="{{ site.icon_img | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   </head>
 
   <body>
+    {% assign meta = "" | split: "" %}
+    {% for yml_file in site.data %}
+      {% assign meta = meta | push: yml_file[1] %}
+    {% endfor %}
+    {% assign meta = meta | sort: 'listing-order' %}
+
     <div class="container">
       <div class="top-bar">
         <div class="language-dropdown">
-          <button id="language-button">idiomas</button>
+          <button id="language-button" aria-haspopup="true" aria-expanded="false">languages</button>
           <div class="dropdown-menu">
-            <a href="/home.html">english</a>
-            <a href="/pt/home.html">português</a>
+            <a href="https://scrotiegg.fun">english</a>
             <a href="/es/home.html">español</a>
+            <a href="/pt/home.html">português</a>
             <a href="/fr/home.html">français</a>
             <a href="/de/home.html">deutsch</a>
             <a href="/ru/home.html">русский</a>
@@ -28,20 +36,125 @@
             <a href="/ja/home.html">日本語</a>
           </div>
         </div>
+
+        <button id="mobile-menu-toggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div id="sidebar">
+          <ul class="toc-box">
+            <!-- Adicione os itens aqui, se aplicável -->
+          </ul>
+        </div>
       </div>
 
       <div id="about">
         <div class="profile-zone">
-          <img class="profile-img" src="/assets/img/sitelogo.jpg" alt="foto do ovo peludo" />
+          <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo" />
+          <ul class="personal-info">
+            {% if site.x_username %}
+              <li>
+                <a aria-label="X" href="https://x.com/{{ site.x_username }}">
+                  <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>x</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.medium_username %}
+              <li>
+                <a aria-label="Medium" href="https://medium.com/@{{ site.medium_username }}">
+                  <img src="{{ '/assets/img/medium.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>medium</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.instagram_username %}
+              <li>
+                <a aria-label="Instagram" href="https://instagram.com/{{ site.instagram_username }}">
+                  <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>instagram</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.tiktok_username %}
+              <li>
+                <a aria-label="TikTok" href="https://tiktok.com/@{{ site.tiktok_username }}">
+                  <img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>tiktok</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.reddit_username %}
+              <li>
+                <a aria-label="Reddit" href="https://reddit.com/user/{{ site.reddit_username }}">
+                  <img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>reddit</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.youtube_username %}
+              <li>
+                <a aria-label="YouTube" href="https://youtube.com/@{{ site.youtube_username }}">
+                  <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>youtube</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.dailymotion_username %}
+              <li>
+                <a aria-label="Dailymotion" href="https://dailymotion.com/{{ site.dailymotion_username }}">
+                  <img src="{{ '/assets/img/dailymotion.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>dailymotion</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.facebook_username %}
+              <li>
+                <a aria-label="Facebook" href="https://facebook.com/{{ site.instagram_username }}">
+                  <img src="{{ '/assets/img/facebook-2.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>facebook</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.threads_username %}
+              <li>
+                <a aria-label="Threads" href="https://threads.net/@{{ site.threads_username }}">
+                  <img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>threads</span></div>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.spotify_username %}
+              <li>
+                <a aria-label="Spotify" href="https://audius.co/scrotiegg/album/scrotiegg">
+                  <img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>audius</span></div>
+                </a>
+              </li>
+            {% endif %}
+          </ul>
         </div>
 
         <div class="name-zone">
           <h1>scrotiegg</h1>
-          <h2 id="scrotiegg-subtitle">sem cérebro, só bolas</h2>
+          <h2 id="scrotiegg-subtitle">no brains, just balls</h2>
         </div>
       </div>
+      
+      <div class="buy-button-zone"></div>
 
-      <div id="contents">
+           <div id="contents">
         <ul>
 
           <!-- MANIFESTO -->
@@ -167,12 +280,16 @@
 
         </ul>
       </div>
-
+       
+      <div class="buy-button-zone final"></div>
+      
       <div id="footer">
-        <span>copyright © 2025 - feito com arrependimento por devscrot</span>
+        <span>copyright © 2025 - made with regret by devscrot</span>
       </div>
+      
     </div>
 
-    <script src="/assets/js/main.js"></script>
+    <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+   
   </body>
 </html>
