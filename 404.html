@@ -62,34 +62,93 @@ layout: null
           <img class="profile-img" src="{{ site.profile_img | prepend: site.baseurl }}" alt="hairy egg photo" />
           <ul class="personal-info">
             {% if site.x_username %}
-              <li><a href="https://x.com/{{ site.x_username }}"><img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="" /><div><span>where dreams go to die</span></div></a></li>
+              <li>
+                <a aria-label="X" href="https://x.com/{{ site.x_username }}">
+                  <img src="{{ '/assets/img/x.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>x</span></div>
+                </a>
+              </li>
             {% endif %}
-            {% if site.discord_username %}
-              <li><a href="https://discord.gg/{{ site.discord_username }}"><img src="{{ '/assets/img/discord.svg' | prepend: site.baseurl }}" alt="" /><div><span>absolute chaos</span></div></a></li>
+
+            {% if site.medium_username %}
+              <li>
+                <a aria-label="Medium" href="https://medium.com/@{{ site.medium_username }}">
+                  <img src="{{ '/assets/img/medium.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>medium</span></div>
+                </a>
+              </li>
             {% endif %}
+
             {% if site.instagram_username %}
-              <li><a href="https://instagram.com/{{ site.instagram_username }}"><img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="" /><div><span>pictures of failure</span></div></a></li>
+              <li>
+                <a aria-label="Instagram" href="https://instagram.com/{{ site.instagram_username }}">
+                  <img src="{{ '/assets/img/instagram.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>instagram</span></div>
+                </a>
+              </li>
             {% endif %}
+
             {% if site.tiktok_username %}
-              <li><a href="https://tiktok.com/@{{ site.tiktok_username }}"><img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="" /><div><span>viral disasters</span></div></a></li>
+              <li>
+                <a aria-label="TikTok" href="https://tiktok.com/@{{ site.tiktok_username }}">
+                  <img src="{{ '/assets/img/tiktok.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>tiktok</span></div>
+                </a>
+              </li>
             {% endif %}
+
             {% if site.reddit_username %}
-              <li><a href="https://reddit.com/user/{{ site.reddit_username }}"><img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="" /><div><span>meme laboratory</span></div></a></li>
+              <li>
+                <a aria-label="Reddit" href="https://reddit.com/user/{{ site.reddit_username }}">
+                  <img src="{{ '/assets/img/reddit.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>reddit</span></div>
+                </a>
+              </li>
             {% endif %}
+
             {% if site.youtube_username %}
-              <li><a href="https://youtube.com/@{{ site.youtube_username }}"><img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="" /><div><span>tutorials that never work</span></div></a></li>
+              <li>
+                <a aria-label="YouTube" href="https://youtube.com/@{{ site.youtube_username }}">
+                  <img src="{{ '/assets/img/youtube.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>youtube</span></div>
+                </a>
+              </li>
             {% endif %}
-            {% if site.github_username %}
-              <li><a href="https://github.com/{{ site.github_username }}"><img src="{{ '/assets/img/github.svg' | prepend: site.baseurl }}" alt="" /><div><span>bad ideas repository</span></div></a></li>
+
+            {% if site.dailymotion_username %}
+              <li>
+                <a aria-label="Dailymotion" href="https://dailymotion.com/{{ site.dailymotion_username }}">
+                  <img src="{{ '/assets/img/dailymotion.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>dailymotion</span></div>
+                </a>
+              </li>
             {% endif %}
+
             {% if site.facebook_username %}
-              <li><a href="https://facebook.com/{{ site.instagram_username }}"><img src="{{ '/assets/img/facebook-2.svg' | prepend: site.baseurl }}" alt="" /><div><span>where your mom invests</span></div></a></li>
+              <li>
+                <a aria-label="Facebook" href="https://facebook.com/{{ site.instagram_username }}">
+                  <img src="{{ '/assets/img/facebook-2.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>facebook</span></div>
+                </a>
+              </li>
             {% endif %}
+
             {% if site.threads_username %}
-              <li><a href="https://threads.net/@{{ site.threads_username }}"><img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="" /><div><span>no thread of hope</span></div></a></li>
+              <li>
+                <a aria-label="Threads" href="https://threads.net/@{{ site.threads_username }}">
+                  <img src="{{ '/assets/img/threads.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>threads</span></div>
+                </a>
+              </li>
             {% endif %}
+
             {% if site.spotify_username %}
-              <li><a href="https://audius.co/scrotiegg/album/scrotiegg"><img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="" /><div><span>sad tunes</span></div></a></li>
+              <li>
+                <a aria-label="Spotify" href="https://audius.co/scrotiegg/album/scrotiegg">
+                  <img src="{{ '/assets/img/spotify.svg' | prepend: site.baseurl }}" alt="" aria-hidden="true" />
+                  <div><span>audius</span></div>
+                </a>
+              </li>
             {% endif %}
           </ul>
         </div>
