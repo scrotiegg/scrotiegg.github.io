@@ -70,7 +70,17 @@ document.addEventListener('DOMContentLoaded', function(){
     '/assets/img/banner7.png',
     '/assets/img/banner8.png',
     '/assets/img/banner9.png',
-    '/assets/img/banner10.png'
+    '/assets/img/banner10.png',
+    '/assets/img/banner11.png',
+    '/assets/img/banner12.png',
+    '/assets/img/banner13.png',
+    '/assets/img/banner14.png',
+    '/assets/img/banner15.png',
+    '/assets/img/banner16.png',
+    '/assets/img/banner17.png',
+    '/assets/img/banner18.png',
+    '/assets/img/banner19.png',
+    '/assets/img/banner20.png'
   ];
 
   var bannerContainer = document.createElement('div');
