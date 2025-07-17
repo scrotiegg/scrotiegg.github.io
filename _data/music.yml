@@ -4,18 +4,18 @@ contents:
   - title: the debut album that nobody asked for
     text: |
       <center>
-        <img src="/assets/img/youwontmakeit.png" alt="scrotiegg debut album cover" width="300" style="border-radius:18px; box-shadow:0 2px 16px #0007; margin-top:14px;">
+        <img src="/assets/img/youwontmakeit.png" alt="scrotiegg debut album cover" width="300">
       </center>
 
       <br>
-
-      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0wDnmwss8cnrve4jG0LD0M?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
       they say a band’s first album is their best.  
       so we decided to release our second album first.  
       
       13 tracks of pure disappointment, existential crises, and questionable beats.  
       
-      out now on <a href="https://audius.co/scrotiegg/album/you-wont-make-it-2" target="_blank" rel="noopener">spotify</a>, <a href="https://audius.co/scrotiegg/album/you-wont-make-it-2" target="_blank" rel="noopener">apple music</a>, <a href="https://audius.co/scrotiegg/album/you-wont-make-it-2" target="_blank" rel="noopener">youtube music</a>, <a href="https://music.amazon.com/albums/B0FHRJ2DYV" target="_blank" rel="noopener">amazon mucic</a>, and <a href="https://audius.co/scrotiegg/album/you-wont-make-it-2" target="_blank" rel="noopener">deezer</a>  
-      
       if you thought rock bottom was low, wait till you hear this album.  
+
+      out now on all major platforms.  
+
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0wDnmwss8cnrve4jG0LD0M?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
