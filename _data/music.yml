@@ -9,6 +9,8 @@ contents:
 
       <br>
 
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/0wDnmwss8cnrve4jG0LD0M?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
       they say a band’s first album is their best.  
       so we decided to release our second album first.  
       
