@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   // ----- BOTÃO DE COMPRA INJETADO -----
-  const buyLink = "https://letsbonk.fun/token/AowyFNUS8KMRvMMLAa959GT8K6TXaq9ErY5SdyEvbonk"; // personalize aqui
+  const buyLink = "https://rproof.tech/token/"; // personalize aqui
 
   const topZone = document.querySelector(".buy-button-zone");
   const finalZone = document.querySelector(".buy-button-zone.final");
